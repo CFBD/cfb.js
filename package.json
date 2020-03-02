@@ -1,6 +1,6 @@
 {
   "name": "cfb.js",
-  "version": "1.24.6",
+  "version": "1.24.8",
   "description": "This_is_an_API_for_accessing_all_sorts_of_college_football_data___It_currently_has_a_wide_array_of_data_ranging_from_play_by_play_to_player_statistics_to_game_scores_and_more_",
   "license": "MIT",
   "main": "src/index.js",
@@ -24,5 +24,17 @@
     "mocha": "~2.3.4",
     "sinon": "1.17.3",
     "expect.js": "~0.3.1"
+  },
+  "keywords": [
+    "football",
+    "cfb",
+    "ncaaf",
+    "data",
+    "statistics"
+  ],
+  "author": "BlueSCar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlueSCar/cfb.js.git"
   }
 }
