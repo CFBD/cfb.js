@@ -15,5 +15,6 @@ Name | Type | Description | Notes
 **elevation** | **Number** |  | [optional] 
 **year** | **Number** |  | [optional] 
 **dome** | **Boolean** |  | [optional] 
+**timezone** | **String** |  | [optional] 
 
 
