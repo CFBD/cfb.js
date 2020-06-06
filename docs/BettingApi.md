@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getLines"></a>
 # **getLines**
-> [GameLines] getLines(year, opts)
+> [GameLines] getLines(opts)
 
 Get betting line information
 
@@ -21,9 +21,9 @@ import {cfb} from 'cfb.js';
 
 let apiInstance = new cfb.BettingApi();
 
-let year = 56; // Number | Year/season filter for games
-
 let opts = { 
+  'gameId': 56, // Number | Game id filter
+  'year': 56, // Number | Year/season filter for games
   'week': 56, // Number | Week filter
   'seasonType': "regular", // String | Season type filter (regular or postseason)
   'team': "team_example", // String | Team
@@ -31,7 +31,7 @@ let opts = {
   'away': "away_example", // String | Away team filter
   'conference': "conference_example" // String | Conference abbreviation filter
 };
-apiInstance.getLines(year, opts).then((data) => {
+apiInstance.getLines(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -43,7 +43,8 @@ apiInstance.getLines(year, opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **Number**| Year/season filter for games | 
+ **gameId** | **Number**| Game id filter | [optional] 
+ **year** | **Number**| Year/season filter for games | [optional] 
  **week** | **Number**| Week filter | [optional] 
  **seasonType** | **String**| Season type filter (regular or postseason) | [optional] [default to regular]
  **team** | **String**| Team | [optional] 
