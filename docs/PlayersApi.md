@@ -5,6 +5,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getPlayerUsage**](PlayersApi.md#getPlayerUsage) | **GET** /player/usage | Get player usage metrics for the season
+[**getReturningProduction**](PlayersApi.md#getReturningProduction) | **GET** /player/returning | Get returning production metrics
 [**playerSearch**](PlayersApi.md#playerSearch) | **GET** /player/search | Search for players
 
 
@@ -53,6 +54,54 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[PlayerUsage]**](PlayerUsage.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getReturningProduction"></a>
+# **getReturningProduction**
+> [ReturningProduction] getReturningProduction(opts)
+
+Get returning production metrics
+
+Returning production metrics
+
+### Example
+```javascript
+import {cfb} from 'cfb.js';
+
+let apiInstance = new cfb.PlayersApi();
+
+let opts = { 
+  'year': 56, // Number | Year filter
+  'team': "team_example", // String | Team filter
+  'conference': "conference_example" // String | Conference abbreviation filter
+};
+apiInstance.getReturningProduction(opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | [optional] 
+ **team** | **String**| Team filter | [optional] 
+ **conference** | **String**| Conference abbreviation filter | [optional] 
+
+### Return type
+
+[**[ReturningProduction]**](ReturningProduction.md)
 
 ### Authorization
 
