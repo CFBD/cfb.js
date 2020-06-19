@@ -130,7 +130,8 @@ let searchTerm = "searchTerm_example"; // String | Term to search on
 
 let opts = { 
   'position': "position_example", // String | Position abbreviation filter
-  'team': "team_example" // String | Team filter
+  'team': "team_example", // String | Team filter
+  'year': 56 // Number | Year filter
 };
 apiInstance.playerSearch(searchTerm, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -147,6 +148,7 @@ Name | Type | Description  | Notes
  **searchTerm** | **String**| Term to search on | 
  **position** | **String**| Position abbreviation filter | [optional] 
  **team** | **String**| Team filter | [optional] 
+ **year** | **Number**| Year filter | [optional] 
 
 ### Return type
 
