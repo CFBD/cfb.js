@@ -15,32 +15,31 @@
  */
 
 import {ApiClient} from '../ApiClient';
-import {GameLinesLines} from './GameLinesLines';
 
 /**
- * The GameLines model module.
- * @module model/GameLines
+ * The GameMedia model module.
+ * @module model/GameMedia
  * @version 1.27.0
  */
-export class GameLines {
+export class GameMedia {
   /**
-   * Constructs a new <code>GameLines</code>.
-   * @alias module:model/GameLines
+   * Constructs a new <code>GameMedia</code>.
+   * @alias module:model/GameMedia
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>GameLines</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>GameMedia</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/GameLines} obj Optional instance to populate.
-   * @return {module:model/GameLines} The populated <code>GameLines</code> instance.
+   * @param {module:model/GameMedia} obj Optional instance to populate.
+   * @return {module:model/GameMedia} The populated <code>GameMedia</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new GameLines();
+      obj = obj || new GameMedia();
       if (data.hasOwnProperty('id'))
         obj.id = ApiClient.convertToType(data['id'], 'Number');
       if (data.hasOwnProperty('season'))
@@ -53,16 +52,14 @@ export class GameLines {
         obj.homeTeam = ApiClient.convertToType(data['homeTeam'], 'String');
       if (data.hasOwnProperty('homeConference'))
         obj.homeConference = ApiClient.convertToType(data['homeConference'], 'String');
-      if (data.hasOwnProperty('homeScore'))
-        obj.homeScore = ApiClient.convertToType(data['homeScore'], 'Number');
       if (data.hasOwnProperty('awayTeam'))
         obj.awayTeam = ApiClient.convertToType(data['awayTeam'], 'String');
       if (data.hasOwnProperty('awayConference'))
         obj.awayConference = ApiClient.convertToType(data['awayConference'], 'String');
-      if (data.hasOwnProperty('awayScore'))
-        obj.awayScore = ApiClient.convertToType(data['awayScore'], 'Number');
-      if (data.hasOwnProperty('lines'))
-        obj.lines = ApiClient.convertToType(data['lines'], [GameLinesLines]);
+      if (data.hasOwnProperty('mediaType'))
+        obj.mediaType = ApiClient.convertToType(data['mediaType'], 'String');
+      if (data.hasOwnProperty('outlet'))
+        obj.outlet = ApiClient.convertToType(data['outlet'], 'String');
     }
     return obj;
   }
@@ -71,56 +68,51 @@ export class GameLines {
 /**
  * @member {Number} id
  */
-GameLines.prototype.id = undefined;
+GameMedia.prototype.id = undefined;
 
 /**
  * @member {Number} season
  */
-GameLines.prototype.season = undefined;
+GameMedia.prototype.season = undefined;
 
 /**
  * @member {Number} week
  */
-GameLines.prototype.week = undefined;
+GameMedia.prototype.week = undefined;
 
 /**
  * @member {String} seasonType
  */
-GameLines.prototype.seasonType = undefined;
+GameMedia.prototype.seasonType = undefined;
 
 /**
  * @member {String} homeTeam
  */
-GameLines.prototype.homeTeam = undefined;
+GameMedia.prototype.homeTeam = undefined;
 
 /**
  * @member {String} homeConference
  */
-GameLines.prototype.homeConference = undefined;
-
-/**
- * @member {Number} homeScore
- */
-GameLines.prototype.homeScore = undefined;
+GameMedia.prototype.homeConference = undefined;
 
 /**
  * @member {String} awayTeam
  */
-GameLines.prototype.awayTeam = undefined;
+GameMedia.prototype.awayTeam = undefined;
 
 /**
  * @member {String} awayConference
  */
-GameLines.prototype.awayConference = undefined;
+GameMedia.prototype.awayConference = undefined;
 
 /**
- * @member {Number} awayScore
+ * @member {String} mediaType
  */
-GameLines.prototype.awayScore = undefined;
+GameMedia.prototype.mediaType = undefined;
 
 /**
- * @member {Array.<module:model/GameLinesLines>} lines
+ * @member {String} outlet
  */
-GameLines.prototype.lines = undefined;
+GameMedia.prototype.outlet = undefined;
 
 

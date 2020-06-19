@@ -5,6 +5,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getAdvancedBoxScore**](GamesApi.md#getAdvancedBoxScore) | **GET** /game/box/advanced | Get advanced box score
+[**getGameMedia**](GamesApi.md#getGameMedia) | **GET** /games/media | Get game media information (TV, radio, etc)
 [**getGames**](GamesApi.md#getGames) | **GET** /games | Get game information
 [**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Get player statistics by game
 [**getTeamGameStats**](GamesApi.md#getTeamGameStats) | **GET** /games/teams | Get team statistics by game
@@ -44,6 +45,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[BoxScore]**](BoxScore.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getGameMedia"></a>
+# **getGameMedia**
+> [GameMedia] getGameMedia(year, opts)
+
+Get game media information (TV, radio, etc)
+
+Game media information (TV, radio, etc)
+
+### Example
+```javascript
+import {cfb} from 'cfb.js';
+
+let apiInstance = new cfb.GamesApi();
+
+let year = 56; // Number | Year filter
+
+let opts = { 
+  'year2': 56, // Number | Week filter
+  'seasonType': 56, // Number | Season type filter (regular, postseason, or both)
+  'team': "team_example", // String | Team filter
+  'conference': "conference_example", // String | Conference filter
+  'mediaType': "mediaType_example" // String | Media type filter (tv, radio, web, ppv, or mobile)
+};
+apiInstance.getGameMedia(year, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | 
+ **year2** | **Number**| Week filter | [optional] 
+ **seasonType** | **Number**| Season type filter (regular, postseason, or both) | [optional] 
+ **team** | **String**| Team filter | [optional] 
+ **conference** | **String**| Conference filter | [optional] 
+ **mediaType** | **String**| Media type filter (tv, radio, web, ppv, or mobile) | [optional] 
+
+### Return type
+
+[**[GameMedia]**](GameMedia.md)
 
 ### Authorization
 
