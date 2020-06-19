@@ -72,7 +72,7 @@ let apiInstance = new cfb.GamesApi();
 let year = 56; // Number | Year filter
 
 let opts = { 
-  'year2': 56, // Number | Week filter
+  'week': 56, // Number | Week filter
   'seasonType': 56, // Number | Season type filter (regular, postseason, or both)
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference filter
@@ -91,7 +91,7 @@ apiInstance.getGameMedia(year, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Number**| Year filter | 
- **year2** | **Number**| Week filter | [optional] 
+ **week** | **Number**| Week filter | [optional] 
  **seasonType** | **Number**| Season type filter (regular, postseason, or both) | [optional] 
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
