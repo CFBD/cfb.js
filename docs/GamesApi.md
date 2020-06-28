@@ -73,7 +73,7 @@ let year = 56; // Number | Year filter
 
 let opts = { 
   'week': 56, // Number | Week filter
-  'seasonType': 56, // Number | Season type filter (regular, postseason, or both)
+  'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference filter
   'mediaType': "mediaType_example" // String | Media type filter (tv, radio, web, ppv, or mobile)
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Number**| Year filter | 
  **week** | **Number**| Week filter | [optional] 
- **seasonType** | **Number**| Season type filter (regular, postseason, or both) | [optional] 
+ **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
  **mediaType** | **String**| Media type filter (tv, radio, web, ppv, or mobile) | [optional] 
