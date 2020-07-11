@@ -32,7 +32,7 @@ let opts = {
   'startWeek': 56, // Number | Start week filter
   'endWeek': 56, // Number | Start week filter
   'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
-  'category': "category_example" // String | Start category filter (e.g. passing)
+  'category': "category_example" // String | Stat category filter (e.g. passing)
 };
 apiInstance.getPlayerSeasonStats(year, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
  **startWeek** | **Number**| Start week filter | [optional] 
  **endWeek** | **Number**| Start week filter | [optional] 
  **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
- **category** | **String**| Start category filter (e.g. passing) | [optional] 
+ **category** | **String**| Stat category filter (e.g. passing) | [optional] 
 
 ### Return type
 
