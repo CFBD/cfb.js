@@ -4,10 +4,68 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getPlayerSeasonStats**](PlayersApi.md#getPlayerSeasonStats) | **GET** /stats/player/season | Get player stats aggregated by season
 [**getPlayerUsage**](PlayersApi.md#getPlayerUsage) | **GET** /player/usage | Get player usage metrics for the season
 [**getReturningProduction**](PlayersApi.md#getReturningProduction) | **GET** /player/returning | Get returning production metrics
 [**playerSearch**](PlayersApi.md#playerSearch) | **GET** /player/search | Search for players
 
+
+<a name="getPlayerSeasonStats"></a>
+# **getPlayerSeasonStats**
+> [PlayerSeasonStat] getPlayerSeasonStats(year, opts)
+
+Get player stats aggregated by season
+
+Season player stats
+
+### Example
+```javascript
+import {cfb} from 'cfb.js';
+
+let apiInstance = new cfb.PlayersApi();
+
+let year = 56; // Number | Year filter
+
+let opts = { 
+  'team': "team_example", // String | Team filter
+  'conference': "conference_example", // String | Conference abbreviation filter
+  'startWeek': 56, // Number | Start week filter
+  'endWeek': 56, // Number | Start week filter
+  'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
+  'category': "category_example" // String | Start category filter (e.g. passing)
+};
+apiInstance.getPlayerSeasonStats(year, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | 
+ **team** | **String**| Team filter | [optional] 
+ **conference** | **String**| Conference abbreviation filter | [optional] 
+ **startWeek** | **Number**| Start week filter | [optional] 
+ **endWeek** | **Number**| Start week filter | [optional] 
+ **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
+ **category** | **String**| Start category filter (e.g. passing) | [optional] 
+
+### Return type
+
+[**[PlayerSeasonStat]**](PlayerSeasonStat.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 <a name="getPlayerUsage"></a>
 # **getPlayerUsage**
