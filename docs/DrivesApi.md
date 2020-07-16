@@ -4,16 +4,16 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDrvies**](DrivesApi.md#getDrvies) | **GET** /drives | Get drive information
+[**getDrvies**](DrivesApi.md#getDrvies) | **GET** /drives | Drive data and results
 
 
 <a name="getDrvies"></a>
 # **getDrvies**
 > [Drive] getDrvies(year, opts)
 
-Get drive information
+Drive data and results
 
-Drive results
+Get game drives
 
 ### Example
 ```javascript

@@ -4,18 +4,18 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getConferenceSPRatings**](RatingsApi.md#getConferenceSPRatings) | **GET** /ratings/sp/conferences | Get average SP+ historical rating data by conference
-[**getSPRatings**](RatingsApi.md#getSPRatings) | **GET** /ratings/sp | Get SP+ historical rating data (requires either a year or team specified)
-[**getSRSRatings**](RatingsApi.md#getSRSRatings) | **GET** /ratings/srs | Get SRS historical rating data (requires either a year or team specified)
+[**getConferenceSPRatings**](RatingsApi.md#getConferenceSPRatings) | **GET** /ratings/sp/conferences | Historical SP+ ratings by conference
+[**getSPRatings**](RatingsApi.md#getSPRatings) | **GET** /ratings/sp | Historical SP+ ratings
+[**getSRSRatings**](RatingsApi.md#getSRSRatings) | **GET** /ratings/srs | Historical SRS ratings
 
 
 <a name="getConferenceSPRatings"></a>
 # **getConferenceSPRatings**
 > [ConferenceSPRating] getConferenceSPRatings(opts)
 
-Get average SP+ historical rating data by conference
+Historical SP+ ratings by conference
 
-Conference average SP+ ratings by year
+Get average SP+ historical rating data by conference
 
 ### Example
 ```javascript
@@ -59,7 +59,7 @@ No authorization required
 # **getSPRatings**
 > [TeamSPRating] getSPRatings(opts)
 
-Get SP+ historical rating data (requires either a year or team specified)
+Historical SP+ ratings
 
 SP+ rating data
 
@@ -105,9 +105,9 @@ No authorization required
 # **getSRSRatings**
 > [TeamSRSRating] getSRSRatings(opts)
 
-Get SRS historical rating data (requires either a year or team specified)
+Historical SRS ratings
 
-SRS rating data
+SRS rating data (requires either a year or team specified)
 
 ### Example
 ```javascript

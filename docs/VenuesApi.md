@@ -4,14 +4,14 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getVenues**](VenuesApi.md#getVenues) | **GET** /venues | Get venue information
+[**getVenues**](VenuesApi.md#getVenues) | **GET** /venues | Arena and venue information
 
 
 <a name="getVenues"></a>
 # **getVenues**
 > [Venue] getVenues()
 
-Get venue information
+Arena and venue information
 
 Venues
 

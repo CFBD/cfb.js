@@ -4,17 +4,17 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getPlayStatTypes**](PlaysApi.md#getPlayStatTypes) | **GET** /play/stat/types | Get play stat type lists
-[**getPlayStats**](PlaysApi.md#getPlayStats) | **GET** /play/stats | Get play statistics
-[**getPlayTypes**](PlaysApi.md#getPlayTypes) | **GET** /play/types | Get play type list
-[**getPlays**](PlaysApi.md#getPlays) | **GET** /plays | Get play information. Requires either a week or team to be specified.
+[**getPlayStatTypes**](PlaysApi.md#getPlayStatTypes) | **GET** /play/stat/types | Types of player play stats
+[**getPlayStats**](PlaysApi.md#getPlayStats) | **GET** /play/stats | Play stats by play
+[**getPlayTypes**](PlaysApi.md#getPlayTypes) | **GET** /play/types | Play types
+[**getPlays**](PlaysApi.md#getPlays) | **GET** /plays | Play by play data
 
 
 <a name="getPlayStatTypes"></a>
 # **getPlayStatTypes**
 > [PlayStatType] getPlayStatTypes()
 
-Get play stat type lists
+Types of player play stats
 
 Type of play stats
 
@@ -51,7 +51,7 @@ No authorization required
 # **getPlayStats**
 > [PlayStat] getPlayStats(opts)
 
-Get play statistics
+Play stats by play
 
 Gets player stats associated by play (limit 1000)
 
@@ -107,7 +107,7 @@ No authorization required
 # **getPlayTypes**
 > [PlayType] getPlayTypes()
 
-Get play type list
+Play types
 
 Types of plays
 
@@ -144,9 +144,9 @@ No authorization required
 # **getPlays**
 > [Play] getPlays(year, opts)
 
-Get play information. Requires either a week or team to be specified.
+Play by play data
 
-Play results
+Get play data and results. Requires either a week or team to be specified.
 
 ### Example
 ```javascript

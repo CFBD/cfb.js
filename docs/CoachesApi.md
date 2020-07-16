@@ -4,14 +4,14 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCoaches**](CoachesApi.md#getCoaches) | **GET** /coaches | Get coach records and school history
+[**getCoaches**](CoachesApi.md#getCoaches) | **GET** /coaches | Coaching records and history
 
 
 <a name="getCoaches"></a>
 # **getCoaches**
 > InlineResponse200 getCoaches(opts)
 
-Get coach records and school history
+Coaching records and history
 
 Coaching history
 

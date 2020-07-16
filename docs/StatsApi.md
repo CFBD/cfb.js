@@ -4,17 +4,17 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAdvancedTeamGameStats**](StatsApi.md#getAdvancedTeamGameStats) | **GET** /stats/game/advanced | Get advanced game team stats
-[**getAdvancedTeamSeasonStats**](StatsApi.md#getAdvancedTeamSeasonStats) | **GET** /stats/season/advanced | Get advanced season team stats
-[**getStatCategories**](StatsApi.md#getStatCategories) | **GET** /stats/categories | Get stat category list
-[**getTeamSeasonStats**](StatsApi.md#getTeamSeasonStats) | **GET** /stats/season | Get season team stats
+[**getAdvancedTeamGameStats**](StatsApi.md#getAdvancedTeamGameStats) | **GET** /stats/game/advanced | Advanced team metrics by game
+[**getAdvancedTeamSeasonStats**](StatsApi.md#getAdvancedTeamSeasonStats) | **GET** /stats/season/advanced | Advanced team metrics by season
+[**getStatCategories**](StatsApi.md#getStatCategories) | **GET** /stats/categories | Team stat categories
+[**getTeamSeasonStats**](StatsApi.md#getTeamSeasonStats) | **GET** /stats/season | Team statistics by season
 
 
 <a name="getAdvancedTeamGameStats"></a>
 # **getAdvancedTeamGameStats**
 > [AdvancedGameStat] getAdvancedTeamGameStats(opts)
 
-Get advanced game team stats
+Advanced team metrics by game
 
 Advanced team game stats
 
@@ -68,7 +68,7 @@ No authorization required
 # **getAdvancedTeamSeasonStats**
 > [AdvancedSeasonStat] getAdvancedTeamSeasonStats(opts)
 
-Get advanced season team stats
+Advanced team metrics by season
 
 Advanced team season stats
 
@@ -120,7 +120,7 @@ No authorization required
 # **getStatCategories**
 > ['String'] getStatCategories()
 
-Get stat category list
+Team stat categories
 
 Stat category list
 
@@ -157,7 +157,7 @@ No authorization required
 # **getTeamSeasonStats**
 > [TeamSeasonStat] getTeamSeasonStats(opts)
 
-Get season team stats
+Team statistics by season
 
 Team season stats
 

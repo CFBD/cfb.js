@@ -4,16 +4,16 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getConferences**](ConferencesApi.md#getConferences) | **GET** /conferences | Get conference list
+[**getConferences**](ConferencesApi.md#getConferences) | **GET** /conferences | Conferences
 
 
 <a name="getConferences"></a>
 # **getConferences**
 > [Conference] getConferences()
 
-Get conference list
-
 Conferences
+
+Get conference list
 
 ### Example
 ```javascript

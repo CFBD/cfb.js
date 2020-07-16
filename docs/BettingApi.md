@@ -4,14 +4,14 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getLines**](BettingApi.md#getLines) | **GET** /lines | Get betting line information
+[**getLines**](BettingApi.md#getLines) | **GET** /lines | Betting lines
 
 
 <a name="getLines"></a>
 # **getLines**
 > [GameLines] getLines(opts)
 
-Get betting line information
+Betting lines
 
 Closing betting lines
 

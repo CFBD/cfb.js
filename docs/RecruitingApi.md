@@ -4,16 +4,16 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getRecruitingGroups**](RecruitingApi.md#getRecruitingGroups) | **GET** /recruiting/groups | Get position group aggregated ratings
-[**getRecruitingPlayers**](RecruitingApi.md#getRecruitingPlayers) | **GET** /recruiting/players | Get player recruiting rankings and data. Requires either a year or team to be specified.
-[**getRecruitingTeams**](RecruitingApi.md#getRecruitingTeams) | **GET** /recruiting/teams | Get team recruiting rankings
+[**getRecruitingGroups**](RecruitingApi.md#getRecruitingGroups) | **GET** /recruiting/groups | Recruit position group ratings
+[**getRecruitingPlayers**](RecruitingApi.md#getRecruitingPlayers) | **GET** /recruiting/players | Player recruiting ratings and rankings
+[**getRecruitingTeams**](RecruitingApi.md#getRecruitingTeams) | **GET** /recruiting/teams | Team recruiting rankings and ratings
 
 
 <a name="getRecruitingGroups"></a>
 # **getRecruitingGroups**
 > [PositionGroupRecruitingRating] getRecruitingGroups(opts)
 
-Get position group aggregated ratings
+Recruit position group ratings
 
 Gets a list of aggregated statistics by team and position grouping
 
@@ -63,9 +63,9 @@ No authorization required
 # **getRecruitingPlayers**
 > [Recruit] getRecruitingPlayers(opts)
 
-Get player recruiting rankings and data. Requires either a year or team to be specified.
+Player recruiting ratings and rankings
 
-Player recruiting rankings
+Get player recruiting rankings and data. Requires either a year or team to be specified.
 
 ### Example
 ```javascript
@@ -115,7 +115,7 @@ No authorization required
 # **getRecruitingTeams**
 > [TeamRecruitingRank] getRecruitingTeams(opts)
 
-Get team recruiting rankings
+Team recruiting rankings and ratings
 
 Team recruiting rankings
 

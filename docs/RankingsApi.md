@@ -4,14 +4,14 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getRankings**](RankingsApi.md#getRankings) | **GET** /rankings | Get historical rankings and polls
+[**getRankings**](RankingsApi.md#getRankings) | **GET** /rankings | Historical polls and rankings
 
 
 <a name="getRankings"></a>
 # **getRankings**
 > [RankingWeek] getRankings(year, opts)
 
-Get historical rankings and polls
+Historical polls and rankings
 
 Poll rankings
 

@@ -4,21 +4,21 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAdvancedBoxScore**](GamesApi.md#getAdvancedBoxScore) | **GET** /game/box/advanced | Get advanced box score
-[**getGameMedia**](GamesApi.md#getGameMedia) | **GET** /games/media | Get game media information (TV, radio, etc)
-[**getGames**](GamesApi.md#getGames) | **GET** /games | Get game information
-[**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Get player statistics by game
-[**getTeamGameStats**](GamesApi.md#getTeamGameStats) | **GET** /games/teams | Get team statistics by game
-[**getTeamRecords**](GamesApi.md#getTeamRecords) | **GET** /records | Get records by year
+[**getAdvancedBoxScore**](GamesApi.md#getAdvancedBoxScore) | **GET** /game/box/advanced | Advanced box scores
+[**getGameMedia**](GamesApi.md#getGameMedia) | **GET** /games/media | Game media information and schedules
+[**getGames**](GamesApi.md#getGames) | **GET** /games | Games and results
+[**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Player game stats
+[**getTeamGameStats**](GamesApi.md#getTeamGameStats) | **GET** /games/teams | Team game stats
+[**getTeamRecords**](GamesApi.md#getTeamRecords) | **GET** /records | Team records
 
 
 <a name="getAdvancedBoxScore"></a>
 # **getAdvancedBoxScore**
 > [BoxScore] getAdvancedBoxScore(gameId)
 
-Get advanced box score
+Advanced box scores
 
-Advanced box score
+Get advanced box score data
 
 ### Example
 ```javascript
@@ -59,7 +59,7 @@ No authorization required
 # **getGameMedia**
 > [GameMedia] getGameMedia(year, opts)
 
-Get game media information (TV, radio, etc)
+Game media information and schedules
 
 Game media information (TV, radio, etc)
 
@@ -114,9 +114,9 @@ No authorization required
 # **getGames**
 > [Game] getGames(year, opts)
 
-Get game information
+Games and results
 
-Game results
+Get game results
 
 ### Example
 ```javascript
@@ -173,9 +173,9 @@ No authorization required
 # **getPlayerGameStats**
 > [PlayerGame] getPlayerGameStats(year, opts)
 
-Get player statistics by game
-
 Player game stats
+
+Player stats broken down by game
 
 ### Example
 ```javascript
@@ -230,9 +230,9 @@ No authorization required
 # **getTeamGameStats**
 > [TeamGame] getTeamGameStats(year, opts)
 
-Get team statistics by game
-
 Team game stats
+
+Team stats broken down by game
 
 ### Example
 ```javascript
@@ -285,9 +285,9 @@ No authorization required
 # **getTeamRecords**
 > [TeamRecord] getTeamRecords(opts)
 
-Get records by year
+Team records
 
-Team records by year
+Get team records by year
 
 ### Example
 ```javascript

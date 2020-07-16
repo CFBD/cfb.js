@@ -4,17 +4,17 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getPlayerSeasonStats**](PlayersApi.md#getPlayerSeasonStats) | **GET** /stats/player/season | Get player stats aggregated by season
-[**getPlayerUsage**](PlayersApi.md#getPlayerUsage) | **GET** /player/usage | Get player usage metrics for the season
-[**getReturningProduction**](PlayersApi.md#getReturningProduction) | **GET** /player/returning | Get returning production metrics
-[**playerSearch**](PlayersApi.md#playerSearch) | **GET** /player/search | Search for players
+[**getPlayerSeasonStats**](PlayersApi.md#getPlayerSeasonStats) | **GET** /stats/player/season | Player stats by season
+[**getPlayerUsage**](PlayersApi.md#getPlayerUsage) | **GET** /player/usage | Player usage metrics broken down by season
+[**getReturningProduction**](PlayersApi.md#getReturningProduction) | **GET** /player/returning | Team returning production metrics
+[**playerSearch**](PlayersApi.md#playerSearch) | **GET** /player/search | Search for player information
 
 
 <a name="getPlayerSeasonStats"></a>
 # **getPlayerSeasonStats**
 > [PlayerSeasonStat] getPlayerSeasonStats(year, opts)
 
-Get player stats aggregated by season
+Player stats by season
 
 Season player stats
 
@@ -71,7 +71,7 @@ No authorization required
 # **getPlayerUsage**
 > [PlayerUsage] getPlayerUsage(year, opts)
 
-Get player usage metrics for the season
+Player usage metrics broken down by season
 
 Player usage metrics by season
 
@@ -126,7 +126,7 @@ No authorization required
 # **getReturningProduction**
 > [ReturningProduction] getReturningProduction(opts)
 
-Get returning production metrics
+Team returning production metrics
 
 Returning production metrics
 
@@ -174,7 +174,7 @@ No authorization required
 # **playerSearch**
 > [PlayerSearchResult] playerSearch(searchTerm, opts)
 
-Search for players
+Search for player information
 
 Search for players
 

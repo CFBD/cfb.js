@@ -4,20 +4,20 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getGamePPA**](MetricsApi.md#getGamePPA) | **GET** /ppa/games | Get team game averages for Predicted Points Added (PPA)
-[**getPlayerGamePPA**](MetricsApi.md#getPlayerGamePPA) | **GET** /ppa/players/games | Get player game averages for Predicted Points Added (PPA)
-[**getPlayerSeasonPPA**](MetricsApi.md#getPlayerSeasonPPA) | **GET** /ppa/players/season | Get player season averages for Predicted Points Added (PPA)
-[**getPredictedPoints**](MetricsApi.md#getPredictedPoints) | **GET** /ppa/predicted | Calculate Predicted Points
-[**getPregameWinProbabilities**](MetricsApi.md#getPregameWinProbabilities) | **GET** /metrics/wp/pregame | Get pregame win probabilities
-[**getTeamPPA**](MetricsApi.md#getTeamPPA) | **GET** /ppa/teams | Get team averages for Predicted Points Added (PPA)
-[**getWinProbabilityData**](MetricsApi.md#getWinProbabilityData) | **GET** /metrics/wp | Get win probability chart data
+[**getGamePPA**](MetricsApi.md#getGamePPA) | **GET** /ppa/games | Team Predicated Points Added (PPA/EPA) by game
+[**getPlayerGamePPA**](MetricsApi.md#getPlayerGamePPA) | **GET** /ppa/players/games | Player Predicated Points Added (PPA/EPA) broken down by game
+[**getPlayerSeasonPPA**](MetricsApi.md#getPlayerSeasonPPA) | **GET** /ppa/players/season | Player Predicated Points Added (PPA/EPA) broken down by season
+[**getPredictedPoints**](MetricsApi.md#getPredictedPoints) | **GET** /ppa/predicted | Predicted Points (i.e. Expected Points or EP)
+[**getPregameWinProbabilities**](MetricsApi.md#getPregameWinProbabilities) | **GET** /metrics/wp/pregame | Pregame win probability data
+[**getTeamPPA**](MetricsApi.md#getTeamPPA) | **GET** /ppa/teams | Predicted Points Added (PPA/EPA) data by team
+[**getWinProbabilityData**](MetricsApi.md#getWinProbabilityData) | **GET** /metrics/wp | Win probability chart data
 
 
 <a name="getGamePPA"></a>
 # **getGamePPA**
 > [GamePPA] getGamePPA(year, opts)
 
-Get team game averages for Predicted Points Added (PPA)
+Team Predicated Points Added (PPA/EPA) by game
 
 Predicted Points Added (PPA) by game
 
@@ -70,7 +70,7 @@ No authorization required
 # **getPlayerGamePPA**
 > [PlayerGamePPA] getPlayerGamePPA(opts)
 
-Get player game averages for Predicted Points Added (PPA)
+Player Predicated Points Added (PPA/EPA) broken down by game
 
 Predicted Points Added (PPA) by player game
 
@@ -126,7 +126,7 @@ No authorization required
 # **getPlayerSeasonPPA**
 > [PlayerSeasonPPA] getPlayerSeasonPPA(opts)
 
-Get player season averages for Predicted Points Added (PPA)
+Player Predicated Points Added (PPA/EPA) broken down by season
 
 Predicted Points Added (PPA) by player season
 
@@ -182,7 +182,7 @@ No authorization required
 # **getPredictedPoints**
 > [PredictedPoints] getPredictedPoints(down, distance)
 
-Calculate Predicted Points
+Predicted Points (i.e. Expected Points or EP)
 
 Predicted Points
 
@@ -228,7 +228,7 @@ No authorization required
 # **getPregameWinProbabilities**
 > [PregameWP] getPregameWinProbabilities(opts)
 
-Get pregame win probabilities
+Pregame win probability data
 
 Pregame win probabilities
 
@@ -278,7 +278,7 @@ No authorization required
 # **getTeamPPA**
 > [TeamPPA] getTeamPPA(opts)
 
-Get team averages for Predicted Points Added (PPA)
+Predicted Points Added (PPA/EPA) data by team
 
 Predicted Points Added (PPA)
 
@@ -328,7 +328,7 @@ No authorization required
 # **getWinProbabilityData**
 > [PlayWP] getWinProbabilityData(gameId, opts)
 
-Get win probability chart data
+Win probability chart data
 
 Win probability data
 

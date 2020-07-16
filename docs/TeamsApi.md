@@ -4,18 +4,18 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getFbsTeams**](TeamsApi.md#getFbsTeams) | **GET** /teams/fbs | Get list of major division teams for a given year
-[**getRoster**](TeamsApi.md#getRoster) | **GET** /roster | Get team roster
-[**getTalent**](TeamsApi.md#getTalent) | **GET** /talent | Get team talent rankings
-[**getTeamMatchup**](TeamsApi.md#getTeamMatchup) | **GET** /teams/matchup | Get matchup history
-[**getTeams**](TeamsApi.md#getTeams) | **GET** /teams | Get team information
+[**getFbsTeams**](TeamsApi.md#getFbsTeams) | **GET** /teams/fbs | FBS team list
+[**getRoster**](TeamsApi.md#getRoster) | **GET** /roster | Team rosters
+[**getTalent**](TeamsApi.md#getTalent) | **GET** /talent | Team talent composite rankings
+[**getTeamMatchup**](TeamsApi.md#getTeamMatchup) | **GET** /teams/matchup | Team matchup history
+[**getTeams**](TeamsApi.md#getTeams) | **GET** /teams | Team information
 
 
 <a name="getFbsTeams"></a>
 # **getFbsTeams**
 > [Team] getFbsTeams(opts)
 
-Get list of major division teams for a given year
+FBS team list
 
 Information on major division teams
 
@@ -59,7 +59,7 @@ No authorization required
 # **getRoster**
 > [Player] getRoster(team, opts)
 
-Get team roster
+Team rosters
 
 Roster data
 
@@ -106,7 +106,7 @@ No authorization required
 # **getTalent**
 > [TeamTalent] getTalent(opts)
 
-Get team talent rankings
+Team talent composite rankings
 
 Team talent composite
 
@@ -150,7 +150,7 @@ No authorization required
 # **getTeamMatchup**
 > [TeamMatchup] getTeamMatchup(team1, team2, opts)
 
-Get matchup history
+Team matchup history
 
 Matchup history
 
@@ -202,9 +202,9 @@ No authorization required
 # **getTeams**
 > [Team] getTeams(opts)
 
-Get team information
-
 Team information
+
+Get team information
 
 ### Example
 ```javascript
