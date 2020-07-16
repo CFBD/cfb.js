@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **position** | **String** |  | [optional] 
 **hometown** | **String** |  | [optional] 
 **teamColor** | **String** |  | [optional] 
+**teamColorSecondary** | **String** |  | [optional] 
 
 
