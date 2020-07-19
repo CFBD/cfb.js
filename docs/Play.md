@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **home** | **String** |  | [optional] 
 **away** | **String** |  | [optional] 
 **defenseConference** | **String** |  | [optional] 
-**defensePoints** | **Number** |  | [optional] 
+**defenseScore** | **Number** |  | [optional] 
 **period** | **Number** |  | [optional] 
 **clock** | [**DriveStartTime**](DriveStartTime.md) |  | [optional] 
 **yardLine** | **Number** |  | [optional] 
