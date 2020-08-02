@@ -18,6 +18,8 @@ Name | Type | Description | Notes
 **defenseScore** | **Number** |  | [optional] 
 **period** | **Number** |  | [optional] 
 **clock** | [**DriveStartTime**](DriveStartTime.md) |  | [optional] 
+**homeTimeouts** | **Number** |  | [optional] 
+**awayTimeouts** | **Number** |  | [optional] 
 **yardLine** | **Number** |  | [optional] 
 **yardsToGoal** | **Number** |  | [optional] 
 **down** | **Number** |  | [optional] 
