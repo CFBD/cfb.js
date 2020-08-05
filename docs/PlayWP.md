@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**gamesId** | **Number** |  | [optional] 
 **playId** | **Number** |  | [optional] 
 **playText** | **String** |  | [optional] 
 **homeId** | **Number** |  | [optional] 
@@ -17,7 +18,6 @@ Name | Type | Description | Notes
 **yardLine** | **Number** |  | [optional] 
 **down** | **Number** |  | [optional] 
 **distance** | **Number** |  | [optional] 
-**homeWinner** | **Boolean** |  | [optional] 
 **homeWinProb** | **Number** |  | [optional] 
 **playNumber** | **Number** |  | [optional] 
 

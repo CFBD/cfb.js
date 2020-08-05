@@ -326,7 +326,7 @@ No authorization required
 
 <a name="getWinProbabilityData"></a>
 # **getWinProbabilityData**
-> [PlayWP] getWinProbabilityData(gameId, opts)
+> [PlayWP] getWinProbabilityData(gameId)
 
 Win probability chart data
 
@@ -340,10 +340,7 @@ let apiInstance = new cfb.MetricsApi();
 
 let gameId = 56; // Number | Game id filter
 
-let opts = { 
-  'adjustForSpread': true // Boolean | Toggles pregame spread adjustments
-};
-apiInstance.getWinProbabilityData(gameId, opts).then((data) => {
+apiInstance.getWinProbabilityData(gameId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -356,7 +353,6 @@ apiInstance.getWinProbabilityData(gameId, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **gameId** | **Number**| Game id filter | 
- **adjustForSpread** | **Boolean**| Toggles pregame spread adjustments | [optional] [default to true]
 
 ### Return type
 
