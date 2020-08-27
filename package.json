@@ -1,6 +1,6 @@
 {
   "name": "cfb.js",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "description": "This_is_an_API_for_accessing_all_sorts_of_college_football_data___It_currently_has_a_wide_array_of_data_ranging_from_play_by_play_to_player_statistics_to_game_scores_and_more_",
   "license": "MIT",
   "main": "src/index.js",
