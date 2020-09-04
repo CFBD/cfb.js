@@ -47,7 +47,7 @@ export class CoachesApi {
      * @param {Number} opts.year Year filter
      * @param {Number} opts.minYear Minimum year filter (inclusive)
      * @param {Number} opts.maxYear Maximum year filter (inclusive)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse200} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/InlineResponse200>} and HTTP response
      */
     getCoachesWithHttpInfo(opts) {
       opts = opts || {};
@@ -72,7 +72,7 @@ export class CoachesApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse200;
+      let returnType = [InlineResponse200];
 
       return this.apiClient.callApi(
         '/coaches', 'GET',
@@ -91,7 +91,7 @@ export class CoachesApi {
      * @param {Number} opts.year Year filter
      * @param {Number} opts.minYear Minimum year filter (inclusive)
      * @param {Number} opts.maxYear Maximum year filter (inclusive)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse200}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/InlineResponse200>}
      */
     getCoaches(opts) {
       return this.getCoachesWithHttpInfo(opts)

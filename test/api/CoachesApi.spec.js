@@ -50,34 +50,40 @@
 
           instance.getCoaches(opts).then(function(data) {
             // TODO: update response assertions
-            expect(data).to.be.a(cfb.InlineResponse200);
-            expect(data.firstName).to.be.a('string');
-            // expect(data.firstName).to.be("");
-            expect(data.lastName).to.be.a('string');
-            // expect(data.lastName).to.be("");
-            {
-              let dataCtr = data.seasons;
-              expect(dataCtr).to.be.an(Array);
-              expect(dataCtr).to.not.be.empty();
-              for (let p in dataCtr) {
-                let data = dataCtr[p];
-                expect(data).to.be.a(cfb.TeamSeason);
-                expect(data.school).to.be.a('string');
-                // expect(data.school).to.be("");
-                expect(data.year).to.be.a('string');
-                // expect(data.year).to.be("");
-                expect(data.games).to.be.a('number');
-                // expect(data.games).to.be(0);
-                expect(data.wins).to.be.a('number');
-                // expect(data.wins).to.be(0);
-                expect(data.losses).to.be.a('number');
-                // expect(data.losses).to.be(0);
-                expect(data.ties).to.be.a('number');
-                // expect(data.ties).to.be(0);
-                expect(data.preseasonRank).to.be.a('number');
-                // expect(data.preseasonRank).to.be(0);
-                expect(data.postseasonRank).to.be.a('number');
-                // expect(data.postseasonRank).to.be(0);
+            let dataCtr = data;
+            expect(dataCtr).to.be.an(Array);
+            expect(dataCtr).to.not.be.empty();
+            for (let p in dataCtr) {
+              let data = dataCtr[p];
+              expect(data).to.be.a(cfb.InlineResponse200);
+              expect(data.firstName).to.be.a('string');
+              // expect(data.firstName).to.be("");
+              expect(data.lastName).to.be.a('string');
+              // expect(data.lastName).to.be("");
+              {
+                let dataCtr = data.seasons;
+                expect(dataCtr).to.be.an(Array);
+                expect(dataCtr).to.not.be.empty();
+                for (let p in dataCtr) {
+                  let data = dataCtr[p];
+                  expect(data).to.be.a(cfb.TeamSeason);
+                  expect(data.school).to.be.a('string');
+                  // expect(data.school).to.be("");
+                  expect(data.year).to.be.a('string');
+                  // expect(data.year).to.be("");
+                  expect(data.games).to.be.a('number');
+                  // expect(data.games).to.be(0);
+                  expect(data.wins).to.be.a('number');
+                  // expect(data.wins).to.be(0);
+                  expect(data.losses).to.be.a('number');
+                  // expect(data.losses).to.be(0);
+                  expect(data.ties).to.be.a('number');
+                  // expect(data.ties).to.be(0);
+                  expect(data.preseasonRank).to.be.a('number');
+                  // expect(data.preseasonRank).to.be(0);
+                  expect(data.postseasonRank).to.be.a('number');
+                  // expect(data.postseasonRank).to.be(0);
+                }
               }
             }
 
