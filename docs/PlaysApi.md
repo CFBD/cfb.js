@@ -142,7 +142,7 @@ No authorization required
 
 <a name="getPlays"></a>
 # **getPlays**
-> [Play] getPlays(year, opts)
+> [Play] getPlays(year, week, opts)
 
 Play by play data
 
@@ -156,9 +156,10 @@ let apiInstance = new cfb.PlaysApi();
 
 let year = 56; // Number | Year filter
 
+let week = 56; // Number | Week filter (required if team, offense, or defense, not specified)
+
 let opts = { 
   'seasonType': "regular", // String | Season type filter
-  'week': 56, // Number | Week filter (required if team, offense, or defense, not specified)
   'team': "team_example", // String | Team filter
   'offense': "offense_example", // String | Offensive team filter
   'defense': "defense_example", // String | Defensive team filter
@@ -167,7 +168,7 @@ let opts = {
   'defenseConference': "defenseConference_example", // String | Defensive conference filter
   'playType': 56 // Number | Play type filter
 };
-apiInstance.getPlays(year, opts).then((data) => {
+apiInstance.getPlays(year, week, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -180,8 +181,8 @@ apiInstance.getPlays(year, opts).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Number**| Year filter | 
+ **week** | **Number**| Week filter (required if team, offense, or defense, not specified) | 
  **seasonType** | **String**| Season type filter | [optional] [default to regular]
- **week** | **Number**| Week filter (required if team, offense, or defense, not specified) | [optional] 
  **team** | **String**| Team filter | [optional] 
  **offense** | **String**| Offensive team filter | [optional] 
  **defense** | **String**| Defensive team filter | [optional] 
