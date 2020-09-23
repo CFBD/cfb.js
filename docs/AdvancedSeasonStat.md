@@ -7,6 +7,6 @@ Name | Type | Description | Notes
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **offense** | [**AdvancedSeasonStatOffense**](AdvancedSeasonStatOffense.md) |  | [optional] 
-**defense** | [**AdvancedSeasonStatDefense**](AdvancedSeasonStatDefense.md) |  | [optional] 
+**defense** | [**AdvancedSeasonStatOffense**](AdvancedSeasonStatOffense.md) |  | [optional] 
 
 
