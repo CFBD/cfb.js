@@ -33,7 +33,8 @@ let opts = {
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference filter
-  'excludeGarbageTime': true // Boolean | Filter to remove garbage time plays from calculations
+  'excludeGarbageTime': true, // Boolean | Filter to remove garbage time plays from calculations
+  'seasonType': "regular" // String | Season type filter (regular or postseason)
 };
 apiInstance.getGamePPA(year, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -52,6 +53,7 @@ Name | Type | Description  | Notes
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
  **excludeGarbageTime** | **Boolean**| Filter to remove garbage time plays from calculations | [optional] 
+ **seasonType** | **String**| Season type filter (regular or postseason) | [optional] [default to regular]
 
 ### Return type
 
@@ -87,7 +89,8 @@ let opts = {
   'position': "position_example", // String | Position abbreviation filter
   'playerId': 56, // Number | Player id filter
   'threshold': "threshold_example", // String | Minimum play threshold filter
-  'excludeGarbageTime': true // Boolean | Filter to remove garbage time plays from calculations
+  'excludeGarbageTime': true, // Boolean | Filter to remove garbage time plays from calculations
+  'seasonType': "regular" // String | Season type filter (regular or postseason)
 };
 apiInstance.getPlayerGamePPA(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -108,6 +111,7 @@ Name | Type | Description  | Notes
  **playerId** | **Number**| Player id filter | [optional] 
  **threshold** | **String**| Minimum play threshold filter | [optional] 
  **excludeGarbageTime** | **Boolean**| Filter to remove garbage time plays from calculations | [optional] 
+ **seasonType** | **String**| Season type filter (regular or postseason) | [optional] [default to regular]
 
 ### Return type
 
