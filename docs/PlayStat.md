@@ -6,6 +6,8 @@ Name | Type | Description | Notes
 **gameId** | **Number** |  | [optional] 
 **season** | **Number** |  | [optional] 
 **week** | **Number** |  | [optional] 
+**team** | **String** |  | [optional] 
+**conference** | **String** |  | [optional] 
 **opponent** | **String** |  | [optional] 
 **teamScore** | **Number** |  | [optional] 
 **opponentScore** | **Number** |  | [optional] 

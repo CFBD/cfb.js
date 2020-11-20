@@ -68,7 +68,8 @@ let opts = {
   'gameId': 56, // Number | gameId filter (from /games endpoint)
   'athleteId': 56, // Number | athleteId filter (from /roster endpoint)
   'statTypeId': 56, // Number | statTypeId filter (from /play/stat/types endpoint)
-  'seasonType': "seasonType_example" // String | regular, postseason, or both
+  'seasonType': "seasonType_example", // String | regular, postseason, or both
+  'conference': "conference_example" // String | conference abbreviation filter
 };
 apiInstance.getPlayStats(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -89,6 +90,7 @@ Name | Type | Description  | Notes
  **athleteId** | **Number**| athleteId filter (from /roster endpoint) | [optional] 
  **statTypeId** | **Number**| statTypeId filter (from /play/stat/types endpoint) | [optional] 
  **seasonType** | **String**| regular, postseason, or both | [optional] 
+ **conference** | **String**| conference abbreviation filter | [optional] 
 
 ### Return type
 
