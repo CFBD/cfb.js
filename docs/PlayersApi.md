@@ -81,7 +81,7 @@ import {cfb} from 'cfb.js';
 
 let apiInstance = new cfb.PlayersApi();
 
-let year = 2019; // Number | Year filter
+let year = 2020; // Number | Year filter
 
 let opts = { 
   'team': "team_example", // String | Team filter
@@ -102,7 +102,7 @@ apiInstance.getPlayerUsage(year, opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **Number**| Year filter | [default to 2019]
+ **year** | **Number**| Year filter | [default to 2020]
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference abbreviation filter | [optional] 
  **position** | **String**| Position abbreviation filter | [optional] 
