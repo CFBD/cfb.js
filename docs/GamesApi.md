@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="getAdvancedBoxScore"></a>
 # **getAdvancedBoxScore**
-> [BoxScore] getAdvancedBoxScore(gameId)
+> BoxScore getAdvancedBoxScore(gameId)
 
 Advanced box scores
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[BoxScore]**](BoxScore.md)
+[**BoxScore**](BoxScore.md)
 
 ### Authorization
 
