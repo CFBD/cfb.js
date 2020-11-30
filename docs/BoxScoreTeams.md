@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**plays** | **Number** |  | [optional] 
 **ppa** | [**[BoxScoreTeamsPpa]**](BoxScoreTeamsPpa.md) |  | [optional] 
 **cumulativePpa** | [**[BoxScoreTeamsPpa]**](BoxScoreTeamsPpa.md) |  | [optional] 
 **successRates** | [**[BoxScoreTeamsSuccessRates]**](BoxScoreTeamsSuccessRates.md) |  | [optional] 
