@@ -31,14 +31,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('AdvancedSeasonStat', function() {
+    describe('Week', function() {
       beforeEach(function() {
-        instance = new cfb.AdvancedSeasonStat();
+        instance = new cfb.Week();
       });
 
-      it('should create an instance of AdvancedSeasonStat', function() {
-        // TODO: update the code to test AdvancedSeasonStat
-        expect(instance).to.be.a(cfb.AdvancedSeasonStat);
+      it('should create an instance of Week', function() {
+        // TODO: update the code to test Week
+        expect(instance).to.be.a(cfb.Week);
       });
 
       it('should have the property season (base name: "season")', function() {
@@ -47,28 +47,28 @@
         // expect(instance.season).to.be(expectedValueLiteral);
       });
 
-      it('should have the property team (base name: "team")', function() {
-        // TODO: update the code to test the property team
-        expect(instance).to.have.property('team');
-        // expect(instance.team).to.be(expectedValueLiteral);
+      it('should have the property week (base name: "week")', function() {
+        // TODO: update the code to test the property week
+        expect(instance).to.have.property('week');
+        // expect(instance.week).to.be(expectedValueLiteral);
       });
 
-      it('should have the property conference (base name: "conference")', function() {
-        // TODO: update the code to test the property conference
-        expect(instance).to.have.property('conference');
-        // expect(instance.conference).to.be(expectedValueLiteral);
+      it('should have the property seasonType (base name: "seasonType")', function() {
+        // TODO: update the code to test the property seasonType
+        expect(instance).to.have.property('seasonType');
+        // expect(instance.seasonType).to.be(expectedValueLiteral);
       });
 
-      it('should have the property offense (base name: "offense")', function() {
-        // TODO: update the code to test the property offense
-        expect(instance).to.have.property('offense');
-        // expect(instance.offense).to.be(expectedValueLiteral);
+      it('should have the property firstGameStart (base name: "firstGameStart")', function() {
+        // TODO: update the code to test the property firstGameStart
+        expect(instance).to.have.property('firstGameStart');
+        // expect(instance.firstGameStart).to.be(expectedValueLiteral);
       });
 
-      it('should have the property defense (base name: "defense")', function() {
-        // TODO: update the code to test the property defense
-        expect(instance).to.have.property('defense');
-        // expect(instance.defense).to.be(expectedValueLiteral);
+      it('should have the property lastGameStart (base name: "lastGameStart")', function() {
+        // TODO: update the code to test the property lastGameStart
+        expect(instance).to.have.property('lastGameStart');
+        // expect(instance.lastGameStart).to.be(expectedValueLiteral);
       });
 
     });

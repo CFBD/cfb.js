@@ -5,6 +5,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getAdvancedBoxScore**](GamesApi.md#getAdvancedBoxScore) | **GET** /game/box/advanced | Advanced box scores
+[**getCalendar**](GamesApi.md#getCalendar) | **GET** /calendar | Season calendar
 [**getGameMedia**](GamesApi.md#getGameMedia) | **GET** /games/media | Game media information and schedules
 [**getGames**](GamesApi.md#getGames) | **GET** /games | Games and results
 [**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Player game stats
@@ -45,6 +46,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BoxScore**](BoxScore.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getCalendar"></a>
+# **getCalendar**
+> [Week] getCalendar(year)
+
+Season calendar
+
+Get calendar of weeks by season
+
+### Example
+```javascript
+import {cfb} from 'cfb.js';
+
+let apiInstance = new cfb.GamesApi();
+
+let year = 56; // Number | Year filter
+
+apiInstance.getCalendar(year).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | 
+
+### Return type
+
+[**[Week]**](Week.md)
 
 ### Authorization
 

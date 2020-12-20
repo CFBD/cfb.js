@@ -57,7 +57,7 @@ No authorization required
 
 <a name="getRoster"></a>
 # **getRoster**
-> [Player] getRoster(team, opts)
+> [Player] getRoster(opts)
 
 Team rosters
 
@@ -69,12 +69,11 @@ import {cfb} from 'cfb.js';
 
 let apiInstance = new cfb.TeamsApi();
 
-let team = "team_example"; // String | Team name
-
 let opts = { 
+  'team': "team_example", // String | Team name
   'year': 56 // Number | Season year
 };
-apiInstance.getRoster(team, opts).then((data) => {
+apiInstance.getRoster(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -86,7 +85,7 @@ apiInstance.getRoster(team, opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **team** | **String**| Team name | 
+ **team** | **String**| Team name | [optional] 
  **year** | **Number**| Season year | [optional] 
 
 ### Return type

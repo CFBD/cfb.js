@@ -15,40 +15,41 @@
  */
 
 import {ApiClient} from '../ApiClient';
-import {RankingWeekPolls} from './RankingWeekPolls';
 
 /**
- * The RankingWeek model module.
- * @module model/RankingWeek
+ * The Week model module.
+ * @module model/Week
  * @version 2.3.4
  */
-export class RankingWeek {
+export class Week {
   /**
-   * Constructs a new <code>RankingWeek</code>.
-   * @alias module:model/RankingWeek
+   * Constructs a new <code>Week</code>.
+   * @alias module:model/Week
    * @class
    */
   constructor() {
   }
 
   /**
-   * Constructs a <code>RankingWeek</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>Week</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RankingWeek} obj Optional instance to populate.
-   * @return {module:model/RankingWeek} The populated <code>RankingWeek</code> instance.
+   * @param {module:model/Week} obj Optional instance to populate.
+   * @return {module:model/Week} The populated <code>Week</code> instance.
    */
   static constructFromObject(data, obj) {
     if (data) {
-      obj = obj || new RankingWeek();
+      obj = obj || new Week();
       if (data.hasOwnProperty('season'))
         obj.season = ApiClient.convertToType(data['season'], 'Number');
-      if (data.hasOwnProperty('seasonType'))
-        obj.seasonType = ApiClient.convertToType(data['seasonType'], 'String');
       if (data.hasOwnProperty('week'))
         obj.week = ApiClient.convertToType(data['week'], 'Number');
-      if (data.hasOwnProperty('polls'))
-        obj.polls = ApiClient.convertToType(data['polls'], [RankingWeekPolls]);
+      if (data.hasOwnProperty('seasonType'))
+        obj.seasonType = ApiClient.convertToType(data['seasonType'], 'String');
+      if (data.hasOwnProperty('firstGameStart'))
+        obj.firstGameStart = ApiClient.convertToType(data['firstGameStart'], 'String');
+      if (data.hasOwnProperty('lastGameStart'))
+        obj.lastGameStart = ApiClient.convertToType(data['lastGameStart'], 'String');
     }
     return obj;
   }
@@ -57,21 +58,26 @@ export class RankingWeek {
 /**
  * @member {Number} season
  */
-RankingWeek.prototype.season = undefined;
-
-/**
- * @member {String} seasonType
- */
-RankingWeek.prototype.seasonType = undefined;
+Week.prototype.season = undefined;
 
 /**
  * @member {Number} week
  */
-RankingWeek.prototype.week = undefined;
+Week.prototype.week = undefined;
 
 /**
- * @member {Array.<module:model/RankingWeekPolls>} polls
+ * @member {String} seasonType
  */
-RankingWeek.prototype.polls = undefined;
+Week.prototype.seasonType = undefined;
+
+/**
+ * @member {String} firstGameStart
+ */
+Week.prototype.firstGameStart = undefined;
+
+/**
+ * @member {String} lastGameStart
+ */
+Week.prototype.lastGameStart = undefined;
 
 

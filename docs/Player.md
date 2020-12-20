@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **id** | **Number** |  | [optional] 
 **firstName** | **String** |  | [optional] 
 **lastName** | **String** |  | [optional] 
+**team** | **String** |  | [optional] 
 **height** | **Number** |  | [optional] 
 **weight** | **Number** |  | [optional] 
 **jersey** | **Number** |  | [optional] 
