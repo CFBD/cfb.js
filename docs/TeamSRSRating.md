@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **conference** | **String** |  | [optional] 
 **division** | **String** |  | [optional] 
 **rating** | **Number** |  | [optional] 
+**ranking** | **Number** |  | [optional] 
 
 

@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ranking** | **Number** |  | [optional] 
 **rating** | **Number** |  | [optional] 
 **success** | **Number** |  | [optional] 
 **explosiveness** | **Number** |  | [optional] 

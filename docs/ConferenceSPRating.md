@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **rating** | **Number** |  | [optional] 
 **secondOrderWins** | **Number** |  | [optional] 
 **sos** | **Number** |  | [optional] 
-**offense** | [**TeamSPRatingOffense**](TeamSPRatingOffense.md) |  | [optional] 
-**defense** | [**TeamSPRatingDefense**](TeamSPRatingDefense.md) |  | [optional] 
+**offense** | [**ConferenceSPRatingOffense**](ConferenceSPRatingOffense.md) |  | [optional] 
+**defense** | [**ConferenceSPRatingDefense**](ConferenceSPRatingDefense.md) |  | [optional] 
 **specialTeams** | [**TeamSPRatingSpecialTeams**](TeamSPRatingSpecialTeams.md) |  | [optional] 
 
 
