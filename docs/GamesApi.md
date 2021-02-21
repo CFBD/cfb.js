@@ -24,6 +24,13 @@ Get advanced box score data
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -49,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -67,6 +74,13 @@ Get calendar of weeks by season
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -92,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -110,6 +124,13 @@ Game media information (TV, radio, etc)
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -147,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -165,6 +186,13 @@ Get game results
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -206,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -224,6 +252,13 @@ Player stats broken down by game
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -263,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -281,6 +316,13 @@ Team stats broken down by game
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -318,7 +360,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -336,6 +378,13 @@ Get team records by year
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.GamesApi();
 
@@ -366,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 

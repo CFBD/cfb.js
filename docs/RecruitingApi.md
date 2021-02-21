@@ -20,6 +20,13 @@ Gets a list of aggregated statistics by team and position grouping
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.RecruitingApi();
 
@@ -52,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -70,6 +77,13 @@ Get player recruiting rankings and data. Requires either a year or team to be sp
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.RecruitingApi();
 
@@ -104,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -122,6 +136,13 @@ Team recruiting rankings
 ### Example
 ```javascript
 import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new cfb.RecruitingApi();
 
@@ -150,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
