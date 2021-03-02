@@ -4,12 +4,12 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDrvies**](DrivesApi.md#getDrvies) | **GET** /drives | Drive data and results
+[**getDrives**](DrivesApi.md#getDrives) | **GET** /drives | Drive data and results
 
 
-<a name="getDrvies"></a>
-# **getDrvies**
-> [Drive] getDrvies(year, opts)
+<a name="getDrives"></a>
+# **getDrives**
+> [Drive] getDrives(year, opts)
 
 Drive data and results
 
@@ -40,7 +40,7 @@ let opts = {
   'offenseConference': "offenseConference_example", // String | Offensive conference filter
   'defenseConference': "defenseConference_example" // String | Defensive conference filter
 };
-apiInstance.getDrvies(year, opts).then((data) => {
+apiInstance.getDrives(year, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
