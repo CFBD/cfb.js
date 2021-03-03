@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **division** | **String** |  | [optional] 
-**total** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
-**conferenceGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
-**homeGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
-**awayGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
+**total** | **Object** |  | [optional] 
+**conferenceGames** | **Object** |  | [optional] 
+**homeGames** | **Object** |  | [optional] 
+**awayGames** | **Object** |  | [optional] 
 
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getCoaches"></a>
 # **getCoaches**
-> [InlineResponse200] getCoaches(opts)
+> [Object] getCoaches(opts)
 
 Coaching records and history
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse200]**](InlineResponse200.md)
+**[Object]**
 
 ### Authorization
 

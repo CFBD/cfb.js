@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **week** | **Number** |  | [optional] 
 **team** | **String** |  | [optional] 
 **opponent** | **String** |  | [optional] 
-**offense** | [**AdvancedGameStatOffense**](AdvancedGameStatOffense.md) |  | [optional] 
-**defense** | [**AdvancedGameStatOffense**](AdvancedGameStatOffense.md) |  | [optional] 
+**offense** | **Object** |  | [optional] 
+**defense** | **Object** |  | [optional] 
 
 
