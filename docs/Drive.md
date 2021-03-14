@@ -22,5 +22,10 @@ Name | Type | Description | Notes
 **plays** | **Number** |  | [optional] 
 **yards** | **Number** |  | [optional] 
 **driveResult** | **String** |  | [optional] 
+**isHomeOffense** | **Boolean** |  | [optional] 
+**startOffenseScore** | **Number** |  | [optional] 
+**startDefenseScore** | **Number** |  | [optional] 
+**endOffenseScore** | **Number** |  | [optional] 
+**endDefenseScore** | **Number** |  | [optional] 
 
 
