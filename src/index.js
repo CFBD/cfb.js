@@ -1,6 +1,6 @@
 /*
  * College Football Data API
- * This is an API for accessing all sorts of college football data.  It currently has a wide array of data ranging from play by play to player statistics to game scores and more.
+ * This is an API for accessing all sorts of college football data.  Please note that API keys should be supplied with \"Bearer \" prepended (e.g. \"Bearer your_key\").
  *
  * OpenAPI spec version: 3.0.1
  * Contact: admin@collegefootballdata.com
@@ -73,7 +73,7 @@ import {VenuesApi} from './api/VenuesApi';
 
 
 /**
-* This_is_an_API_for_accessing_all_sorts_of_college_football_data___It_currently_has_a_wide_array_of_data_ranging_from_play_by_play_to_player_statistics_to_game_scores_and_more_.<br>
+* This_is_an_API_for_accessing_all_sorts_of_college_football_data___Please_note_that_API_keys_should_be_supplied_with_Bearer__prepended__e_g__Bearer_your_key_.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
