@@ -15,5 +15,8 @@ Name | Type | Description | Notes
 **city** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
+**homeLatitude** | **Number** |  | [optional] 
+**homeLongitude** | **Number** |  | [optional] 
+**homeCountyFips** | **String** |  | [optional] 
 
 
