@@ -1,6 +1,6 @@
 {
   "name": "cfb.js",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "description": "This_is_an_API_for_accessing_all_sorts_of_college_football_data___Please_note_that_API_keys_should_be_supplied_with_Bearer__prepended__e_g__Bearer_your_key_",
   "license": "MIT",
   "main": "src/index.js",

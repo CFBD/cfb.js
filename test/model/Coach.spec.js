@@ -31,26 +31,32 @@
   var instance;
 
   describe('(package)', function() {
-    describe('TeamGame', function() {
+    describe('Coach', function() {
       beforeEach(function() {
-        instance = new cfb.TeamGame();
+        instance = new cfb.Coach();
       });
 
-      it('should create an instance of TeamGame', function() {
-        // TODO: update the code to test TeamGame
-        expect(instance).to.be.a(cfb.TeamGame);
+      it('should create an instance of Coach', function() {
+        // TODO: update the code to test Coach
+        expect(instance).to.be.a(cfb.Coach);
       });
 
-      it('should have the property id (base name: "id")', function() {
-        // TODO: update the code to test the property id
-        expect(instance).to.have.property('id');
-        // expect(instance.id).to.be(expectedValueLiteral);
+      it('should have the property firstName (base name: "first_name")', function() {
+        // TODO: update the code to test the property firstName
+        expect(instance).to.have.property('firstName');
+        // expect(instance.firstName).to.be(expectedValueLiteral);
       });
 
-      it('should have the property teams (base name: "teams")', function() {
-        // TODO: update the code to test the property teams
-        expect(instance).to.have.property('teams');
-        // expect(instance.teams).to.be(expectedValueLiteral);
+      it('should have the property lastName (base name: "last_name")', function() {
+        // TODO: update the code to test the property lastName
+        expect(instance).to.have.property('lastName');
+        // expect(instance.lastName).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property seasons (base name: "seasons")', function() {
+        // TODO: update the code to test the property seasons
+        expect(instance).to.have.property('seasons');
+        // expect(instance.seasons).to.be(expectedValueLiteral);
       });
 
     });

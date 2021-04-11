@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getCoaches"></a>
 # **getCoaches**
-> [Object] getCoaches(opts)
+> [Coach] getCoaches(opts)
 
 Coaching records and history
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**[Object]**
+[**[Coach]**](Coach.md)
 
 ### Authorization
 
