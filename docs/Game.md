@@ -27,5 +27,6 @@ Name | Type | Description | Notes
 **awayLineScores** | **[Number]** |  | [optional] 
 **awayPostWinProb** | **Number** |  | [optional] 
 **excitementIndex** | **Number** |  | [optional] 
+**highlights** | **String** |  | [optional] 
 
 

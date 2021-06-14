@@ -18,5 +18,6 @@ Name | Type | Description | Notes
 **homeLatitude** | **Number** |  | [optional] 
 **homeLongitude** | **Number** |  | [optional] 
 **homeCountyFips** | **String** |  | [optional] 
+**recruitIds** | **[Number]** |  | [optional] 
 
 
