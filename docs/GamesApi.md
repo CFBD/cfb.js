@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**getAdvancedBoxScore**](GamesApi.md#getAdvancedBoxScore) | **GET** /game/box/advanced | Advanced box scores
 [**getCalendar**](GamesApi.md#getCalendar) | **GET** /calendar | Season calendar
 [**getGameMedia**](GamesApi.md#getGameMedia) | **GET** /games/media | Game media information and schedules
+[**getGameWeather**](GamesApi.md#getGameWeather) | **GET** /games/weather | Game weather information (Patreon only)
 [**getGames**](GamesApi.md#getGames) | **GET** /games | Games and results
 [**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Player game stats
 [**getTeamGameStats**](GamesApi.md#getTeamGameStats) | **GET** /games/teams | Team game stats
@@ -165,6 +166,66 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[GameMedia]**](GameMedia.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getGameWeather"></a>
+# **getGameWeather**
+> [GameWeather] getGameWeather(year, opts)
+
+Game weather information (Patreon only)
+
+Weather information for the hour of kickoff
+
+### Example
+```javascript
+import {cfb} from 'cfb.js';
+let defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new cfb.GamesApi();
+
+let year = 56; // Number | Year filter
+
+let opts = { 
+  'week': 56, // Number | Week filter
+  'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
+  'team': "team_example", // String | Team filter
+  'conference': "conference_example" // String | Conference filter
+};
+apiInstance.getGameWeather(year, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | 
+ **week** | **Number**| Week filter | [optional] 
+ **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
+ **team** | **String**| Team filter | [optional] 
+ **conference** | **String**| Conference filter | [optional] 
+
+### Return type
+
+[**[GameWeather]**](GameWeather.md)
 
 ### Authorization
 

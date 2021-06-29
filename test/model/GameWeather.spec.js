@@ -31,14 +31,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('GameMedia', function() {
+    describe('GameWeather', function() {
       beforeEach(function() {
-        instance = new cfb.GameMedia();
+        instance = new cfb.GameWeather();
       });
 
-      it('should create an instance of GameMedia', function() {
-        // TODO: update the code to test GameMedia
-        expect(instance).to.be.a(cfb.GameMedia);
+      it('should create an instance of GameWeather', function() {
+        // TODO: update the code to test GameWeather
+        expect(instance).to.be.a(cfb.GameWeather);
       });
 
       it('should have the property id (base name: "id")', function() {
@@ -101,16 +101,70 @@
         // expect(instance.awayConference).to.be(expectedValueLiteral);
       });
 
-      it('should have the property mediaType (base name: "mediaType")', function() {
-        // TODO: update the code to test the property mediaType
-        expect(instance).to.have.property('mediaType');
-        // expect(instance.mediaType).to.be(expectedValueLiteral);
+      it('should have the property venueId (base name: "venueId")', function() {
+        // TODO: update the code to test the property venueId
+        expect(instance).to.have.property('venueId');
+        // expect(instance.venueId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property outlet (base name: "outlet")', function() {
-        // TODO: update the code to test the property outlet
-        expect(instance).to.have.property('outlet');
-        // expect(instance.outlet).to.be(expectedValueLiteral);
+      it('should have the property venue (base name: "venue")', function() {
+        // TODO: update the code to test the property venue
+        expect(instance).to.have.property('venue');
+        // expect(instance.venue).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property temperature (base name: "temperature")', function() {
+        // TODO: update the code to test the property temperature
+        expect(instance).to.have.property('temperature');
+        // expect(instance.temperature).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property dewPoint (base name: "dewPoint")', function() {
+        // TODO: update the code to test the property dewPoint
+        expect(instance).to.have.property('dewPoint');
+        // expect(instance.dewPoint).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property humidity (base name: "humidity")', function() {
+        // TODO: update the code to test the property humidity
+        expect(instance).to.have.property('humidity');
+        // expect(instance.humidity).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property precipitation (base name: "precipitation")', function() {
+        // TODO: update the code to test the property precipitation
+        expect(instance).to.have.property('precipitation');
+        // expect(instance.precipitation).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property snowfall (base name: "snowfall")', function() {
+        // TODO: update the code to test the property snowfall
+        expect(instance).to.have.property('snowfall');
+        // expect(instance.snowfall).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property windDirection (base name: "windDirection")', function() {
+        // TODO: update the code to test the property windDirection
+        expect(instance).to.have.property('windDirection');
+        // expect(instance.windDirection).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property windSpeed (base name: "windSpeed")', function() {
+        // TODO: update the code to test the property windSpeed
+        expect(instance).to.have.property('windSpeed');
+        // expect(instance.windSpeed).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property pressure (base name: "pressure")', function() {
+        // TODO: update the code to test the property pressure
+        expect(instance).to.have.property('pressure');
+        // expect(instance.pressure).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property weatherConditionCode (base name: "weatherConditionCode")', function() {
+        // TODO: update the code to test the property weatherConditionCode
+        expect(instance).to.have.property('weatherConditionCode');
+        // expect(instance.weatherConditionCode).to.be(expectedValueLiteral);
       });
 
     });
