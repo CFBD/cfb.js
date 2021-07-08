@@ -17,19 +17,19 @@ Venues
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.VenuesApi();
-apiInstance.getVenues().then((data) => {
+var apiInstance = new cfb.VenuesApi();
+apiInstance.getVenues().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

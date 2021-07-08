@@ -19,27 +19,27 @@ List of NFL Draft picks
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.DraftApi();
+var apiInstance = new cfb.DraftApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'nflTeam': "nflTeam_example", // String | NFL team filter
   'college': "college_example", // String | Player college filter
   'conference': "conference_example", // String | College confrence abbreviation filter
   'position': "position_example" // String | NFL position filter
 };
-apiInstance.getDraftPicks(opts).then((data) => {
+apiInstance.getDraftPicks(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -78,19 +78,19 @@ List of NFL positions
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.DraftApi();
-apiInstance.getNFLPositions().then((data) => {
+var apiInstance = new cfb.DraftApi();
+apiInstance.getNFLPositions().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -122,19 +122,19 @@ List of NFL teams
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.DraftApi();
-apiInstance.getNFLTeams().then((data) => {
+var apiInstance = new cfb.DraftApi();
+apiInstance.getNFLTeams().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

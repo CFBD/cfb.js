@@ -19,24 +19,24 @@ Get average SP+ historical rating data by conference
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RatingsApi();
+var apiInstance = new cfb.RatingsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Season filter
   'conference': "conference_example" // String | Conference abbreviation filter
 };
-apiInstance.getConferenceSPRatings(opts).then((data) => {
+apiInstance.getConferenceSPRatings(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -72,24 +72,24 @@ SP+ rating data
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RatingsApi();
+var apiInstance = new cfb.RatingsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Season filter (required if team not specified)
   'team': "team_example" // String | Team filter (required if year not specified)
 };
-apiInstance.getSPRatings(opts).then((data) => {
+apiInstance.getSPRatings(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -125,25 +125,25 @@ SRS rating data (requires either a year or team specified)
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RatingsApi();
+var apiInstance = new cfb.RatingsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Season filter (required if team not specified)
   'team': "team_example", // String | Team filter (required if year not specified)
   'conference': "conference_example" // String | Conference filter
 };
-apiInstance.getSRSRatings(opts).then((data) => {
+apiInstance.getSRSRatings(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

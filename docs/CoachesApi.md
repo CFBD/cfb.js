@@ -17,18 +17,18 @@ Coaching history
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.CoachesApi();
+var apiInstance = new cfb.CoachesApi();
 
-let opts = { 
+var opts = { 
   'firstName': "firstName_example", // String | First name filter
   'lastName': "lastName_example", // String | Last name filter
   'team': "team_example", // String | Team name filter
@@ -36,9 +36,9 @@ let opts = {
   'minYear': 56, // Number | Minimum year filter (inclusive)
   'maxYear': 56 // Number | Maximum year filter (inclusive)
 };
-apiInstance.getCoaches(opts).then((data) => {
+apiInstance.getCoaches(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

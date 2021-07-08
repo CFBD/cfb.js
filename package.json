@@ -1,26 +1,20 @@
 {
   "name": "cfb.js",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "This_is_an_API_for_accessing_all_sorts_of_college_football_data___Please_note_that_API_keys_should_be_supplied_with_Bearer__prepended__e_g__Bearer_your_key__API_keys_can_be_acquired_from_the_CollegeFootballData_com_website_",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --recursive"
   },
   "browser": {
     "fs": false
   },
   "dependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-builtin-extend": "^1.1.2",
     "superagent": "3.7.0",
     "querystring": "0.2.0"
   },
   "devDependencies": {
-    "babel-core": "6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
     "mocha": "~2.3.4",
     "sinon": "1.17.3",
     "expect.js": "~0.3.1"

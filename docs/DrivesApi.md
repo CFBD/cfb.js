@@ -17,20 +17,20 @@ Get game drives
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.DrivesApi();
+var apiInstance = new cfb.DrivesApi();
 
-let year = 56; // Number | Year filter
+var year = 56; // Number | Year filter
 
-let opts = { 
+var opts = { 
   'seasonType': "regular", // String | Season type filter
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
@@ -40,9 +40,9 @@ let opts = {
   'offenseConference': "offenseConference_example", // String | Offensive conference filter
   'defenseConference': "defenseConference_example" // String | Defensive conference filter
 };
-apiInstance.getDrives(year, opts).then((data) => {
+apiInstance.getDrives(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

@@ -17,26 +17,26 @@ Poll rankings
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RankingsApi();
+var apiInstance = new cfb.RankingsApi();
 
-let year = 56; // Number | Year/season filter for games
+var year = 56; // Number | Year/season filter for games
 
-let opts = { 
+var opts = { 
   'week': 56, // Number | Week filter
   'seasonType': "regular" // String | Season type filter (regular or postseason)
 };
-apiInstance.getRankings(year, opts).then((data) => {
+apiInstance.getRankings(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

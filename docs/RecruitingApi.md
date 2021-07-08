@@ -19,26 +19,26 @@ Gets a list of aggregated statistics by team and position grouping
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RecruitingApi();
+var apiInstance = new cfb.RecruitingApi();
 
-let opts = { 
+var opts = { 
   'startYear': 56, // Number | Starting year
   'endYear': 56, // Number | Ending year
   'team': "team_example", // String | Team filter
   'conference': "conference_example" // String | conference filter
 };
-apiInstance.getRecruitingGroups(opts).then((data) => {
+apiInstance.getRecruitingGroups(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -76,27 +76,27 @@ Get player recruiting rankings and data. Requires either a year or team to be sp
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RecruitingApi();
+var apiInstance = new cfb.RecruitingApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Recruiting class year (required if team no specified)
   'classification': "HighSchool", // String | Type of recruit (HighSchool, JUCO, PrepSchool)
   'position': "position_example", // String | Position abbreviation filter
   'state': "state_example", // String | State or province abbreviation filter
   'team': "team_example" // String | Committed team filter (required if year not specified)
 };
-apiInstance.getRecruitingPlayers(opts).then((data) => {
+apiInstance.getRecruitingPlayers(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -135,24 +135,24 @@ Team recruiting rankings
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.RecruitingApi();
+var apiInstance = new cfb.RecruitingApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Recruiting class year
   'team': "team_example" // String | Team filter
 };
-apiInstance.getRecruitingTeams(opts).then((data) => {
+apiInstance.getRecruitingTeams(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

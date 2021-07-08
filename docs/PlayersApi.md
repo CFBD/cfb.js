@@ -20,20 +20,20 @@ Season player stats
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlayersApi();
+var apiInstance = new cfb.PlayersApi();
 
-let year = 56; // Number | Year filter
+var year = 56; // Number | Year filter
 
-let opts = { 
+var opts = { 
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference abbreviation filter
   'startWeek': 56, // Number | Start week filter
@@ -41,9 +41,9 @@ let opts = {
   'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
   'category': "category_example" // String | Stat category filter (e.g. passing)
 };
-apiInstance.getPlayerSeasonStats(year, opts).then((data) => {
+apiInstance.getPlayerSeasonStats(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -84,29 +84,29 @@ Player usage metrics by season
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlayersApi();
+var apiInstance = new cfb.PlayersApi();
 
-let year = 2020; // Number | Year filter
+var year = 2020; // Number | Year filter
 
-let opts = { 
+var opts = { 
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference abbreviation filter
   'position': "position_example", // String | Position abbreviation filter
   'playerId': 56, // Number | Player id filter
   'excludeGarbageTime': true // Boolean | Filter to remove garbage time plays from calculations
 };
-apiInstance.getPlayerUsage(year, opts).then((data) => {
+apiInstance.getPlayerUsage(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -146,25 +146,25 @@ Returning production metrics
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlayersApi();
+var apiInstance = new cfb.PlayersApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'team': "team_example", // String | Team filter
   'conference': "conference_example" // String | Conference abbreviation filter
 };
-apiInstance.getReturningProduction(opts).then((data) => {
+apiInstance.getReturningProduction(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -201,27 +201,27 @@ Search for players
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlayersApi();
+var apiInstance = new cfb.PlayersApi();
 
-let searchTerm = "searchTerm_example"; // String | Term to search on
+var searchTerm = "searchTerm_example"; // String | Term to search on
 
-let opts = { 
+var opts = { 
   'position': "position_example", // String | Position abbreviation filter
   'team': "team_example", // String | Team filter
   'year': 56 // Number | Year filter
 };
-apiInstance.playerSearch(searchTerm, opts).then((data) => {
+apiInstance.playerSearch(searchTerm, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

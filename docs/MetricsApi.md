@@ -23,29 +23,29 @@ Predicted Points Added (PPA) by game
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let year = 56; // Number | Year filter
+var year = 56; // Number | Year filter
 
-let opts = { 
+var opts = { 
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference filter
   'excludeGarbageTime': true, // Boolean | Filter to remove garbage time plays from calculations
   'seasonType': "regular" // String | Season type filter (regular or postseason)
 };
-apiInstance.getGamePPA(year, opts).then((data) => {
+apiInstance.getGamePPA(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -85,18 +85,18 @@ Predicted Points Added (PPA) by player game
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
@@ -106,9 +106,9 @@ let opts = {
   'excludeGarbageTime': true, // Boolean | Filter to remove garbage time plays from calculations
   'seasonType': "regular" // String | Season type filter (regular or postseason)
 };
-apiInstance.getPlayerGamePPA(opts).then((data) => {
+apiInstance.getPlayerGamePPA(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -150,18 +150,18 @@ Predicted Points Added (PPA) by player season
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference abbreviation filter
@@ -170,9 +170,9 @@ let opts = {
   'threshold': "threshold_example", // String | Minimum play threshold filter
   'excludeGarbageTime': true // Boolean | Filter to remove garbage time plays from calculations
 };
-apiInstance.getPlayerSeasonPPA(opts).then((data) => {
+apiInstance.getPlayerSeasonPPA(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -213,24 +213,24 @@ Predicted Points
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let down = 56; // Number | Down filter
+var down = 56; // Number | Down filter
 
-let distance = 56; // Number | Distance filter
+var distance = 56; // Number | Distance filter
 
-apiInstance.getPredictedPoints(down, distance).then((data) => {
+apiInstance.getPredictedPoints(down, distance).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -266,26 +266,26 @@ Pregame win probabilities
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
   'seasonType': "seasonType_example" // String | regular or postseason
 };
-apiInstance.getPregameWinProbabilities(opts).then((data) => {
+apiInstance.getPregameWinProbabilities(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -323,26 +323,26 @@ Predicted Points Added (PPA)
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter (required if team not specified)
   'team': "team_example", // String | Team filter (required if year not specified)
   'conference': "conference_example", // String | Conference filter
   'excludeGarbageTime': true // Boolean | Filter to remove garbage time plays from calculations
 };
-apiInstance.getTeamPPA(opts).then((data) => {
+apiInstance.getTeamPPA(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -380,22 +380,22 @@ Win probability data
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.MetricsApi();
+var apiInstance = new cfb.MetricsApi();
 
-let gameId = 56; // Number | Game id filter
+var gameId = 56; // Number | Game id filter
 
-apiInstance.getWinProbabilityData(gameId).then((data) => {
+apiInstance.getWinProbabilityData(gameId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 

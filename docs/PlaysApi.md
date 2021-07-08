@@ -20,19 +20,19 @@ Type of play stats
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlaysApi();
-apiInstance.getPlayStatTypes().then((data) => {
+var apiInstance = new cfb.PlaysApi();
+apiInstance.getPlayStatTypes().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -64,18 +64,18 @@ Gets player stats associated by play (limit 1000)
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlaysApi();
+var apiInstance = new cfb.PlaysApi();
 
-let opts = { 
+var opts = { 
   'year': 56, // Number | Year filter
   'week': 56, // Number | Week filter
   'team': "team_example", // String | Team filter
@@ -85,9 +85,9 @@ let opts = {
   'seasonType': "seasonType_example", // String | regular, postseason, or both
   'conference': "conference_example" // String | conference abbreviation filter
 };
-apiInstance.getPlayStats(opts).then((data) => {
+apiInstance.getPlayStats(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -129,19 +129,19 @@ Types of plays
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlaysApi();
-apiInstance.getPlayTypes().then((data) => {
+var apiInstance = new cfb.PlaysApi();
+apiInstance.getPlayTypes().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
@@ -173,22 +173,22 @@ Get play data and results
 
 ### Example
 ```javascript
-import {cfb} from 'cfb.js';
-let defaultClient = cfb.ApiClient.instance;
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
 
 // Configure API key authorization: ApiKeyAuth
-let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new cfb.PlaysApi();
+var apiInstance = new cfb.PlaysApi();
 
-let year = 56; // Number | Year filter
+var year = 56; // Number | Year filter
 
-let week = 56; // Number | Week filter (required if team, offense, or defense, not specified)
+var week = 56; // Number | Week filter (required if team, offense, or defense, not specified)
 
-let opts = { 
+var opts = { 
   'seasonType': "regular", // String | Season type filter
   'team': "team_example", // String | Team filter
   'offense': "offense_example", // String | Offensive team filter
@@ -198,9 +198,9 @@ let opts = {
   'defenseConference': "defenseConference_example", // String | Defensive conference filter
   'playType': 56 // Number | Play type filter
 };
-apiInstance.getPlays(year, week, opts).then((data) => {
+apiInstance.getPlays(year, week, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
