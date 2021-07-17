@@ -29,5 +29,6 @@ Name | Type | Description | Notes
 **playType** | **String** |  | [optional] 
 **playText** | **String** |  | [optional] 
 **ppa** | **Number** |  | [optional] 
+**wallclock** | **String** |  | [optional] 
 
 

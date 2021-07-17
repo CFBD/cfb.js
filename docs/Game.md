@@ -28,5 +28,6 @@ Name | Type | Description | Notes
 **awayPostWinProb** | **Number** |  | [optional] 
 **excitementIndex** | **Number** |  | [optional] 
 **highlights** | **String** |  | [optional] 
+**notes** | **String** |  | [optional] 
 
 
