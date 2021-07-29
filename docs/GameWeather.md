@@ -24,5 +24,6 @@ Name | Type | Description | Notes
 **windSpeed** | **Number** |  | [optional] 
 **pressure** | **Number** |  | [optional] 
 **weatherConditionCode** | **Number** |  | [optional] 
+**weatherCondition** | **String** |  | [optional] 
 
 
