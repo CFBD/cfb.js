@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 <a name="getTeamMatchup"></a>
 # **getTeamMatchup**
-> [TeamMatchup] getTeamMatchup(team1, team2, opts)
+> TeamMatchup getTeamMatchup(team1, team2, opts)
 
 Team matchup history
 
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[TeamMatchup]**](TeamMatchup.md)
+[**TeamMatchup**](TeamMatchup.md)
 
 ### Authorization
 
