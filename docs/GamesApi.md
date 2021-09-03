@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getGameWeather**](GamesApi.md#getGameWeather) | **GET** /games/weather | Game weather information (Patreon only)
 [**getGames**](GamesApi.md#getGames) | **GET** /games | Games and results
 [**getPlayerGameStats**](GamesApi.md#getPlayerGameStats) | **GET** /games/players | Player game stats
+[**getScoreboard**](GamesApi.md#getScoreboard) | **GET** /scoreboard | Live game results (Patreon only)
 [**getTeamGameStats**](GamesApi.md#getTeamGameStats) | **GET** /games/teams | Team game stats
 [**getTeamRecords**](GamesApi.md#getTeamRecords) | **GET** /records | Team records
 
@@ -356,6 +357,50 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[PlayerGame]**](PlayerGame.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getScoreboard"></a>
+# **getScoreboard**
+> [ScoreboardGame] getScoreboard()
+
+Live game results (Patreon only)
+
+Get live game results
+
+### Example
+```javascript
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+var apiInstance = new cfb.GamesApi();
+apiInstance.getScoreboard().then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[ScoreboardGame]**](ScoreboardGame.md)
 
 ### Authorization
 
