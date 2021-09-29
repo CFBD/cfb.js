@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 <a name="getGameWeather"></a>
 # **getGameWeather**
-> [GameWeather] getGameWeather(year, opts)
+> [GameWeather] getGameWeather(opts)
 
 Game weather information (Patreon only)
 
@@ -198,15 +198,15 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 
 var apiInstance = new cfb.GamesApi();
 
-var year = 56; // Number | Year filter
-
 var opts = { 
+  'gameId': 56, // Number | Game id filter (required if no year)
+  'year': 56, // Number | Year filter (required if no game id)
   'week': 56, // Number | Week filter
   'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
   'team': "team_example", // String | Team filter
   'conference': "conference_example" // String | Conference filter
 };
-apiInstance.getGameWeather(year, opts).then(function(data) {
+apiInstance.getGameWeather(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -218,7 +218,8 @@ apiInstance.getGameWeather(year, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **Number**| Year filter | 
+ **gameId** | **Number**| Game id filter (required if no year) | [optional] 
+ **year** | **Number**| Year filter (required if no game id) | [optional] 
  **week** | **Number**| Week filter | [optional] 
  **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
  **team** | **String**| Team filter | [optional] 

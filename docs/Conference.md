@@ -7,5 +7,6 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **shortName** | **String** |  | [optional] 
 **abbreviation** | **String** |  | [optional] 
+**classification** | **String** |  | [optional] 
 
 
