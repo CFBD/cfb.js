@@ -5,6 +5,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getConferenceSPRatings**](RatingsApi.md#getConferenceSPRatings) | **GET** /ratings/sp/conferences | Historical SP+ ratings by conference
+[**getEloRatings**](RatingsApi.md#getEloRatings) | **GET** /ratings/elo | Historical Elo ratings
 [**getSPRatings**](RatingsApi.md#getSPRatings) | **GET** /ratings/sp | Historical SP+ ratings
 [**getSRSRatings**](RatingsApi.md#getSRSRatings) | **GET** /ratings/srs | Historical SRS ratings
 
@@ -52,6 +53,63 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[ConferenceSPRating]**](ConferenceSPRating.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getEloRatings"></a>
+# **getEloRatings**
+> [TeamEloRating] getEloRatings(opts)
+
+Historical Elo ratings
+
+Elo rating data
+
+### Example
+```javascript
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+var apiInstance = new cfb.RatingsApi();
+
+var opts = { 
+  'year': 56, // Number | Season filter
+  'week': 56, // Number | Maximum week filter
+  'team': "team_example", // String | Team filter
+  'conference': "conference_example" // String | Conference filter
+};
+apiInstance.getEloRatings(opts).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Season filter | [optional] 
+ **week** | **Number**| Maximum week filter | [optional] 
+ **team** | **String**| Team filter | [optional] 
+ **conference** | **String**| Conference filter | [optional] 
+
+### Return type
+
+[**[TeamEloRating]**](TeamEloRating.md)
 
 ### Authorization
 

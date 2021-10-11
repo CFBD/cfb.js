@@ -26,52 +26,66 @@
     if (!root.cfb) {
       root.cfb = {};
     }
-    root.cfb.DraftPosition = factory(root.cfb.ApiClient);
+    root.cfb.TeamEloRating = factory(root.cfb.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The DraftPosition model module.
-   * @module model/DraftPosition
+   * The TeamEloRating model module.
+   * @module model/TeamEloRating
    * @version 4.1.14
    */
 
   /**
-   * Constructs a new <code>DraftPosition</code>.
-   * @alias module:model/DraftPosition
+   * Constructs a new <code>TeamEloRating</code>.
+   * @alias module:model/TeamEloRating
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>DraftPosition</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>TeamEloRating</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/DraftPosition} obj Optional instance to populate.
-   * @return {module:model/DraftPosition} The populated <code>DraftPosition</code> instance.
+   * @param {module:model/TeamEloRating} obj Optional instance to populate.
+   * @return {module:model/TeamEloRating} The populated <code>TeamEloRating</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('name'))
-        obj.name = ApiClient.convertToType(data['name'], 'String');
-      if (data.hasOwnProperty('abbreviation'))
-        obj.abbreviation = ApiClient.convertToType(data['abbreviation'], 'String');
+      if (data.hasOwnProperty('year'))
+        obj.year = ApiClient.convertToType(data['year'], 'Number');
+      if (data.hasOwnProperty('team'))
+        obj.team = ApiClient.convertToType(data['team'], 'String');
+      if (data.hasOwnProperty('conference'))
+        obj.conference = ApiClient.convertToType(data['conference'], 'String');
+      if (data.hasOwnProperty('elo'))
+        obj.elo = ApiClient.convertToType(data['elo'], 'Number');
     }
     return obj;
   }
 
   /**
-   * @member {String} name
+   * @member {Number} year
    */
-  exports.prototype.name = undefined;
+  exports.prototype.year = undefined;
 
   /**
-   * @member {String} abbreviation
+   * @member {String} team
    */
-  exports.prototype.abbreviation = undefined;
+  exports.prototype.team = undefined;
+
+  /**
+   * @member {String} conference
+   */
+  exports.prototype.conference = undefined;
+
+  /**
+   * @member {Number} elo
+   */
+  exports.prototype.elo = undefined;
 
 
   return exports;

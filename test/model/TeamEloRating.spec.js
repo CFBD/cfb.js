@@ -31,38 +31,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('PlayerUsage', function() {
+    describe('TeamEloRating', function() {
       beforeEach(function() {
-        instance = new cfb.PlayerUsage();
+        instance = new cfb.TeamEloRating();
       });
 
-      it('should create an instance of PlayerUsage', function() {
-        // TODO: update the code to test PlayerUsage
-        expect(instance).to.be.a(cfb.PlayerUsage);
+      it('should create an instance of TeamEloRating', function() {
+        // TODO: update the code to test TeamEloRating
+        expect(instance).to.be.a(cfb.TeamEloRating);
       });
 
-      it('should have the property season (base name: "season")', function() {
-        // TODO: update the code to test the property season
-        expect(instance).to.have.property('season');
-        // expect(instance.season).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property id (base name: "id")', function() {
-        // TODO: update the code to test the property id
-        expect(instance).to.have.property('id');
-        // expect(instance.id).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property name (base name: "name")', function() {
-        // TODO: update the code to test the property name
-        expect(instance).to.have.property('name');
-        // expect(instance.name).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property position (base name: "position")', function() {
-        // TODO: update the code to test the property position
-        expect(instance).to.have.property('position');
-        // expect(instance.position).to.be(expectedValueLiteral);
+      it('should have the property year (base name: "year")', function() {
+        // TODO: update the code to test the property year
+        expect(instance).to.have.property('year');
+        // expect(instance.year).to.be(expectedValueLiteral);
       });
 
       it('should have the property team (base name: "team")', function() {
@@ -77,10 +59,10 @@
         // expect(instance.conference).to.be(expectedValueLiteral);
       });
 
-      it('should have the property usage (base name: "usage")', function() {
-        // TODO: update the code to test the property usage
-        expect(instance).to.have.property('usage');
-        // expect(instance.usage).to.be(expectedValueLiteral);
+      it('should have the property elo (base name: "elo")', function() {
+        // TODO: update the code to test the property elo
+        expect(instance).to.have.property('elo');
+        // expect(instance.elo).to.be(expectedValueLiteral);
       });
 
     });
