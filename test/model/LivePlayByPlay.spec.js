@@ -31,14 +31,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('TeamGame', function() {
+    describe('LivePlayByPlay', function() {
       beforeEach(function() {
-        instance = new cfb.TeamGame();
+        instance = new cfb.LivePlayByPlay();
       });
 
-      it('should create an instance of TeamGame', function() {
-        // TODO: update the code to test TeamGame
-        expect(instance).to.be.a(cfb.TeamGame);
+      it('should create an instance of LivePlayByPlay', function() {
+        // TODO: update the code to test LivePlayByPlay
+        expect(instance).to.be.a(cfb.LivePlayByPlay);
       });
 
       it('should have the property id (base name: "id")', function() {
@@ -51,6 +51,12 @@
         // TODO: update the code to test the property teams
         expect(instance).to.have.property('teams');
         // expect(instance.teams).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property plays (base name: "plays")', function() {
+        // TODO: update the code to test the property plays
+        expect(instance).to.have.property('plays');
+        // expect(instance.plays).to.be(expectedValueLiteral);
       });
 
     });

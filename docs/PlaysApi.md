@@ -4,11 +4,62 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getLivePlays**](PlaysApi.md#getLivePlays) | **GET** /live/plays | Live metrics and PBP (Patreon Tier 2)
 [**getPlayStatTypes**](PlaysApi.md#getPlayStatTypes) | **GET** /play/stat/types | Types of player play stats
 [**getPlayStats**](PlaysApi.md#getPlayStats) | **GET** /play/stats | Play stats by play
 [**getPlayTypes**](PlaysApi.md#getPlayTypes) | **GET** /play/types | Play types
 [**getPlays**](PlaysApi.md#getPlays) | **GET** /plays | Play by play data
 
+
+<a name="getLivePlays"></a>
+# **getLivePlays**
+> LivePlayByPlay getLivePlays(id)
+
+Live metrics and PBP (Patreon Tier 2)
+
+Get live metrics and PBP
+
+### Example
+```javascript
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+var apiInstance = new cfb.PlaysApi();
+
+var id = 56; // Number | Game id
+
+apiInstance.getLivePlays(id).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| Game id | 
+
+### Return type
+
+[**LivePlayByPlay**](LivePlayByPlay.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 <a name="getPlayStatTypes"></a>
 # **getPlayStatTypes**

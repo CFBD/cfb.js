@@ -26,73 +26,59 @@
     if (!root.cfb) {
       root.cfb = {};
     }
-    root.cfb.Week = factory(root.cfb.ApiClient);
+    root.cfb.LivePlayByPlay = factory(root.cfb.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The Week model module.
-   * @module model/Week
+   * The LivePlayByPlay model module.
+   * @module model/LivePlayByPlay
    * @version 4.2.0
    */
 
   /**
-   * Constructs a new <code>Week</code>.
-   * @alias module:model/Week
+   * Constructs a new <code>LivePlayByPlay</code>.
+   * @alias module:model/LivePlayByPlay
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>Week</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>LivePlayByPlay</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Week} obj Optional instance to populate.
-   * @return {module:model/Week} The populated <code>Week</code> instance.
+   * @param {module:model/LivePlayByPlay} obj Optional instance to populate.
+   * @return {module:model/LivePlayByPlay} The populated <code>LivePlayByPlay</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('season'))
-        obj.season = ApiClient.convertToType(data['season'], 'Number');
-      if (data.hasOwnProperty('week'))
-        obj.week = ApiClient.convertToType(data['week'], 'Number');
-      if (data.hasOwnProperty('seasonType'))
-        obj.seasonType = ApiClient.convertToType(data['seasonType'], 'String');
-      if (data.hasOwnProperty('firstGameStart'))
-        obj.firstGameStart = ApiClient.convertToType(data['firstGameStart'], 'String');
-      if (data.hasOwnProperty('lastGameStart'))
-        obj.lastGameStart = ApiClient.convertToType(data['lastGameStart'], 'String');
+      if (data.hasOwnProperty('id'))
+        obj.id = ApiClient.convertToType(data['id'], 'Number');
+      if (data.hasOwnProperty('teams'))
+        obj.teams = ApiClient.convertToType(data['teams'], [Object]);
+      if (data.hasOwnProperty('plays'))
+        obj.plays = ApiClient.convertToType(data['plays'], [Object]);
     }
     return obj;
   }
 
   /**
-   * @member {Number} season
+   * @member {Number} id
    */
-  exports.prototype.season = undefined;
+  exports.prototype.id = undefined;
 
   /**
-   * @member {Number} week
+   * @member {Array.<Object>} teams
    */
-  exports.prototype.week = undefined;
+  exports.prototype.teams = undefined;
 
   /**
-   * @member {String} seasonType
+   * @member {Array.<Object>} plays
    */
-  exports.prototype.seasonType = undefined;
-
-  /**
-   * @member {String} firstGameStart
-   */
-  exports.prototype.firstGameStart = undefined;
-
-  /**
-   * @member {String} lastGameStart
-   */
-  exports.prototype.lastGameStart = undefined;
+  exports.prototype.plays = undefined;
 
 
   return exports;
