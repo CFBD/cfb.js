@@ -4,7 +4,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getLivePlays**](PlaysApi.md#getLivePlays) | **GET** /live/plays | Live metrics and PBP (Patreon Tier 2)
+[**getLivePlays**](PlaysApi.md#getLivePlays) | **GET** /live/plays | Live metrics and PBP (Patreon only)
 [**getPlayStatTypes**](PlaysApi.md#getPlayStatTypes) | **GET** /play/stat/types | Types of player play stats
 [**getPlayStats**](PlaysApi.md#getPlayStats) | **GET** /play/stats | Play stats by play
 [**getPlayTypes**](PlaysApi.md#getPlayTypes) | **GET** /play/types | Play types
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 # **getLivePlays**
 > LivePlayByPlay getLivePlays(id)
 
-Live metrics and PBP (Patreon Tier 2)
+Live metrics and PBP (Patreon only)
 
 Get live metrics and PBP
 
