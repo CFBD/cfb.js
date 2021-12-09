@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**getPlayerSeasonStats**](PlayersApi.md#getPlayerSeasonStats) | **GET** /stats/player/season | Player stats by season
 [**getPlayerUsage**](PlayersApi.md#getPlayerUsage) | **GET** /player/usage | Player usage metrics broken down by season
 [**getReturningProduction**](PlayersApi.md#getReturningProduction) | **GET** /player/returning | Team returning production metrics
+[**getTransferPortal**](PlayersApi.md#getTransferPortal) | **GET** /player/portal | Transfer portal by season
 [**playerSearch**](PlayersApi.md#playerSearch) | **GET** /player/search | Search for player information
 
 
@@ -181,6 +182,56 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**[ReturningProduction]**](ReturningProduction.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getTransferPortal"></a>
+# **getTransferPortal**
+> [PortalPlayer] getTransferPortal(year)
+
+Transfer portal by season
+
+Transfer portal by season
+
+### Example
+```javascript
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+var apiInstance = new cfb.PlayersApi();
+
+var year = 56; // Number | Year filter
+
+apiInstance.getTransferPortal(year).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **year** | **Number**| Year filter | 
+
+### Return type
+
+[**[PortalPlayer]**](PortalPlayer.md)
 
 ### Authorization
 

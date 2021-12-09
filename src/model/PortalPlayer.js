@@ -26,59 +26,57 @@
     if (!root.cfb) {
       root.cfb = {};
     }
-    root.cfb.PlayerSearchResult = factory(root.cfb.ApiClient);
+    root.cfb.PortalPlayer = factory(root.cfb.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The PlayerSearchResult model module.
-   * @module model/PlayerSearchResult
+   * The PortalPlayer model module.
+   * @module model/PortalPlayer
    * @version 4.3.1
    */
 
   /**
-   * Constructs a new <code>PlayerSearchResult</code>.
-   * @alias module:model/PlayerSearchResult
+   * Constructs a new <code>PortalPlayer</code>.
+   * @alias module:model/PortalPlayer
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>PlayerSearchResult</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>PortalPlayer</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/PlayerSearchResult} obj Optional instance to populate.
-   * @return {module:model/PlayerSearchResult} The populated <code>PlayerSearchResult</code> instance.
+   * @param {module:model/PortalPlayer} obj Optional instance to populate.
+   * @return {module:model/PortalPlayer} The populated <code>PortalPlayer</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('id'))
         obj.id = ApiClient.convertToType(data['id'], 'Number');
-      if (data.hasOwnProperty('team'))
-        obj.team = ApiClient.convertToType(data['team'], 'String');
-      if (data.hasOwnProperty('name'))
-        obj.name = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('season'))
+        obj.season = ApiClient.convertToType(data['season'], 'Number');
       if (data.hasOwnProperty('firstName'))
         obj.firstName = ApiClient.convertToType(data['firstName'], 'String');
       if (data.hasOwnProperty('lastName'))
         obj.lastName = ApiClient.convertToType(data['lastName'], 'String');
-      if (data.hasOwnProperty('weight'))
-        obj.weight = ApiClient.convertToType(data['weight'], 'Number');
-      if (data.hasOwnProperty('height'))
-        obj.height = ApiClient.convertToType(data['height'], 'Number');
-      if (data.hasOwnProperty('jersey'))
-        obj.jersey = ApiClient.convertToType(data['jersey'], 'Number');
       if (data.hasOwnProperty('position'))
         obj.position = ApiClient.convertToType(data['position'], 'String');
-      if (data.hasOwnProperty('hometown'))
-        obj.hometown = ApiClient.convertToType(data['hometown'], 'String');
-      if (data.hasOwnProperty('teamColor'))
-        obj.teamColor = ApiClient.convertToType(data['teamColor'], 'String');
-      if (data.hasOwnProperty('teamColorSecondary'))
-        obj.teamColorSecondary = ApiClient.convertToType(data['teamColorSecondary'], 'String');
+      if (data.hasOwnProperty('origin'))
+        obj.origin = ApiClient.convertToType(data['origin'], 'String');
+      if (data.hasOwnProperty('destination'))
+        obj.destination = ApiClient.convertToType(data['destination'], 'String');
+      if (data.hasOwnProperty('transferDate'))
+        obj.transferDate = ApiClient.convertToType(data['transferDate'], 'String');
+      if (data.hasOwnProperty('rating'))
+        obj.rating = ApiClient.convertToType(data['rating'], 'Number');
+      if (data.hasOwnProperty('stars'))
+        obj.stars = ApiClient.convertToType(data['stars'], 'Number');
+      if (data.hasOwnProperty('eligibility'))
+        obj.eligibility = ApiClient.convertToType(data['eligibility'], 'String');
     }
     return obj;
   }
@@ -89,14 +87,9 @@
   exports.prototype.id = undefined;
 
   /**
-   * @member {String} team
+   * @member {Number} season
    */
-  exports.prototype.team = undefined;
-
-  /**
-   * @member {String} name
-   */
-  exports.prototype.name = undefined;
+  exports.prototype.season = undefined;
 
   /**
    * @member {String} firstName
@@ -109,39 +102,39 @@
   exports.prototype.lastName = undefined;
 
   /**
-   * @member {Number} weight
-   */
-  exports.prototype.weight = undefined;
-
-  /**
-   * @member {Number} height
-   */
-  exports.prototype.height = undefined;
-
-  /**
-   * @member {Number} jersey
-   */
-  exports.prototype.jersey = undefined;
-
-  /**
    * @member {String} position
    */
   exports.prototype.position = undefined;
 
   /**
-   * @member {String} hometown
+   * @member {String} origin
    */
-  exports.prototype.hometown = undefined;
+  exports.prototype.origin = undefined;
 
   /**
-   * @member {String} teamColor
+   * @member {String} destination
    */
-  exports.prototype.teamColor = undefined;
+  exports.prototype.destination = undefined;
 
   /**
-   * @member {String} teamColorSecondary
+   * @member {String} transferDate
    */
-  exports.prototype.teamColorSecondary = undefined;
+  exports.prototype.transferDate = undefined;
+
+  /**
+   * @member {Number} rating
+   */
+  exports.prototype.rating = undefined;
+
+  /**
+   * @member {Number} stars
+   */
+  exports.prototype.stars = undefined;
+
+  /**
+   * @member {String} eligibility
+   */
+  exports.prototype.eligibility = undefined;
 
 
   return exports;
