@@ -268,6 +268,7 @@ var opts = {
   'home': "home_example", // String | Home team filter
   'away': "away_example", // String | Away team filter
   'conference': "conference_example", // String | Conference abbreviation filter
+  'division': "division_example", // String | Division filter (fbs/fcs/ii/iii)
   'id': 56 // Number | id filter for querying a single game
 };
 apiInstance.getGames(year, opts).then(function(data) {
@@ -289,6 +290,7 @@ Name | Type | Description  | Notes
  **home** | **String**| Home team filter | [optional] 
  **away** | **String**| Away team filter | [optional] 
  **conference** | **String**| Conference abbreviation filter | [optional] 
+ **division** | **String**| Division filter (fbs/fcs/ii/iii) | [optional] 
  **id** | **Number**| id filter for querying a single game | [optional] 
 
 ### Return type

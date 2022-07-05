@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **altName1** | **String** |  | [optional] 
 **altName2** | **String** |  | [optional] 
 **altName3** | **String** |  | [optional] 
+**classification** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **division** | **String** |  | [optional] 
 **color** | **String** |  | [optional] 
