@@ -372,7 +372,7 @@ Name | Type | Description  | Notes
 
 <a name="getScoreboard"></a>
 # **getScoreboard**
-> [ScoreboardGame] getScoreboard()
+> [ScoreboardGame] getScoreboard(opts)
 
 Live game results (Patreon only)
 
@@ -390,7 +390,12 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 var apiInstance = new cfb.GamesApi();
-apiInstance.getScoreboard().then(function(data) {
+
+var opts = { 
+  'classification': "classification_example", // String | Classification filter (fbs, fcs, ii, or iii). Defaults to fbs.
+  'conference': "conference_example" // String | Conference abbreviation filter.
+};
+apiInstance.getScoreboard(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -399,7 +404,11 @@ apiInstance.getScoreboard().then(function(data) {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **classification** | **String**| Classification filter (fbs, fcs, ii, or iii). Defaults to fbs. | [optional] 
+ **conference** | **String**| Conference abbreviation filter. | [optional] 
 
 ### Return type
 

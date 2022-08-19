@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
 **startDate** | **String** |  | [optional] 
+**startTimeTBD** | **Boolean** |  | [optional] 
 **tv** | **String** |  | [optional] 
 **neutralSite** | **Boolean** |  | [optional] 
 **conferenceGame** | **Boolean** |  | [optional] 
