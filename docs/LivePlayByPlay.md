@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **distance** | **Number** |  | [optional] 
 **yardsToGoal** | **Number** |  | [optional] 
 **teams** | **[Object]** |  | [optional] 
-**plays** | **[Object]** |  | [optional] 
+**drives** | **[Object]** |  | [optional] 
 
 
