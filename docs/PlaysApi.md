@@ -247,7 +247,8 @@ var opts = {
   'conference': "conference_example", // String | Conference filter
   'offenseConference': "offenseConference_example", // String | Offensive conference filter
   'defenseConference': "defenseConference_example", // String | Defensive conference filter
-  'playType': 56 // Number | Play type filter
+  'playType': 56, // Number | Play type filter
+  'classification': "classification_example" // String | Division classification filter (fbs/fcs/ii/iii)
 };
 apiInstance.getPlays(year, week, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -271,6 +272,7 @@ Name | Type | Description  | Notes
  **offenseConference** | **String**| Offensive conference filter | [optional] 
  **defenseConference** | **String**| Defensive conference filter | [optional] 
  **playType** | **Number**| Play type filter | [optional] 
+ **classification** | **String**| Division classification filter (fbs/fcs/ii/iii) | [optional] 
 
 ### Return type
 

@@ -143,7 +143,8 @@ var opts = {
   'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference filter
-  'mediaType': "mediaType_example" // String | Media type filter (tv, radio, web, ppv, or mobile)
+  'mediaType': "mediaType_example", // String | Media type filter (tv, radio, web, ppv, or mobile)
+  'classification': "classification_example" // String | Division classification filter (fbs/fcs/ii/iii)
 };
 apiInstance.getGameMedia(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -163,6 +164,7 @@ Name | Type | Description  | Notes
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
  **mediaType** | **String**| Media type filter (tv, radio, web, ppv, or mobile) | [optional] 
+ **classification** | **String**| Division classification filter (fbs/fcs/ii/iii) | [optional] 
 
 ### Return type
 
@@ -204,7 +206,8 @@ var opts = {
   'week': 56, // Number | Week filter
   'seasonType': "seasonType_example", // String | Season type filter (regular, postseason, or both)
   'team': "team_example", // String | Team filter
-  'conference': "conference_example" // String | Conference filter
+  'conference': "conference_example", // String | Conference filter
+  'classification': "classification_example" // String | Division classification filter (fbs/fcs/ii/iii)
 };
 apiInstance.getGameWeather(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -224,6 +227,7 @@ Name | Type | Description  | Notes
  **seasonType** | **String**| Season type filter (regular, postseason, or both) | [optional] 
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
+ **classification** | **String**| Division classification filter (fbs/fcs/ii/iii) | [optional] 
 
 ### Return type
 
@@ -268,7 +272,7 @@ var opts = {
   'home': "home_example", // String | Home team filter
   'away': "away_example", // String | Away team filter
   'conference': "conference_example", // String | Conference abbreviation filter
-  'division': "division_example", // String | Division filter (fbs/fcs/ii/iii)
+  'division': "division_example", // String | Division classification filter (fbs/fcs/ii/iii)
   'id': 56 // Number | id filter for querying a single game
 };
 apiInstance.getGames(year, opts).then(function(data) {
@@ -290,7 +294,7 @@ Name | Type | Description  | Notes
  **home** | **String**| Home team filter | [optional] 
  **away** | **String**| Away team filter | [optional] 
  **conference** | **String**| Conference abbreviation filter | [optional] 
- **division** | **String**| Division filter (fbs/fcs/ii/iii) | [optional] 
+ **division** | **String**| Division classification filter (fbs/fcs/ii/iii) | [optional] 
  **id** | **Number**| id filter for querying a single game | [optional] 
 
 ### Return type
