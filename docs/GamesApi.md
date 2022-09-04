@@ -455,7 +455,8 @@ var opts = {
   'seasonType': "regular", // String | Season type filter (regular or postseason)
   'team': "team_example", // String | Team filter
   'conference': "conference_example", // String | Conference abbreviation filter
-  'gameId': 56 // Number | Game id filter
+  'gameId': 56, // Number | Game id filter
+  'classification': "classification_example" // String | Division classification filter (fbs/fcs/ii/iii)
 };
 apiInstance.getTeamGameStats(year, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -475,6 +476,7 @@ Name | Type | Description  | Notes
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference abbreviation filter | [optional] 
  **gameId** | **Number**| Game id filter | [optional] 
+ **classification** | **String**| Division classification filter (fbs/fcs/ii/iii) | [optional] 
 
 ### Return type
 
