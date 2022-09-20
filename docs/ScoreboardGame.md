@@ -12,10 +12,10 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 **period** | **Number** |  | [optional] 
 **clock** | **String** |  | [optional] 
-**venue** | **Object** |  | [optional] 
-**homeTeam** | **Object** |  | [optional] 
-**awayTeam** | **Object** |  | [optional] 
-**weather** | **Object** |  | [optional] 
-**betting** | **Object** |  | [optional] 
+**venue** | [**ScoreboardGameVenue**](ScoreboardGameVenue.md) |  | [optional] 
+**homeTeam** | [**ScoreboardGameHomeTeam**](ScoreboardGameHomeTeam.md) |  | [optional] 
+**awayTeam** | [**ScoreboardGameHomeTeam**](ScoreboardGameHomeTeam.md) |  | [optional] 
+**weather** | [**ScoreboardGameWeather**](ScoreboardGameWeather.md) |  | [optional] 
+**betting** | [**ScoreboardGameBetting**](ScoreboardGameBetting.md) |  | [optional] 
 
 

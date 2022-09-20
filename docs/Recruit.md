@@ -19,6 +19,6 @@ Name | Type | Description | Notes
 **city** | **String** |  | [optional] 
 **stateProvince** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
-**hometownInfo** | **Object** |  | [optional] 
+**hometownInfo** | [**RecruitHometownInfo**](RecruitHometownInfo.md) |  | [optional] 
 
 

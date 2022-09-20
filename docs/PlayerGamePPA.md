@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **position** | **String** |  | [optional] 
 **team** | **String** |  | [optional] 
 **opponent** | **String** |  | [optional] 
-**averagePPA** | **Object** |  | [optional] 
+**averagePPA** | [**PlayerGamePPAAveragePPA**](PlayerGamePPAAveragePPA.md) |  | [optional] 
 
 

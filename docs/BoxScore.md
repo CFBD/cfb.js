@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**teams** | **Object** |  | [optional] 
-**players** | **Object** |  | [optional] 
+**teams** | [**BoxScoreTeams**](BoxScoreTeams.md) |  | [optional] 
+**players** | [**BoxScorePlayers**](BoxScorePlayers.md) |  | [optional] 
 
 

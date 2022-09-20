@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **opponent** | **String** |  | [optional] 
-**offense** | **Object** |  | [optional] 
-**defense** | **Object** |  | [optional] 
+**offense** | [**GamePPAOffense**](GamePPAOffense.md) |  | [optional] 
+**defense** | [**GamePPAOffense**](GamePPAOffense.md) |  | [optional] 
 
 

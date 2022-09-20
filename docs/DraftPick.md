@@ -20,6 +20,6 @@ Name | Type | Description | Notes
 **preDraftRanking** | **Number** |  | [optional] 
 **preDraftPositionRanking** | **Number** |  | [optional] 
 **preDraftGrade** | **Number** |  | [optional] 
-**hometownInfo** | **Object** |  | [optional] 
+**hometownInfo** | [**DraftPickHometownInfo**](DraftPickHometownInfo.md) |  | [optional] 
 
 

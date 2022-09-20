@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **color** | **String** |  | [optional] 
 **altColor** | **String** |  | [optional] 
 **logos** | **[String]** |  | [optional] 
-**location** | **Object** |  | [optional] 
+**location** | [**TeamLocation**](TeamLocation.md) |  | [optional] 
 
 

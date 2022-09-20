@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **position** | **String** |  | [optional] 
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
-**averagePPA** | **Object** |  | [optional] 
-**totalPPA** | **Object** |  | [optional] 
+**averagePPA** | [**PlayerSeasonPPAAveragePPA**](PlayerSeasonPPAAveragePPA.md) |  | [optional] 
+**totalPPA** | [**PlayerSeasonPPAAveragePPA**](PlayerSeasonPPAAveragePPA.md) |  | [optional] 
 
 

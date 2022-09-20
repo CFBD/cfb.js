@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **team1Wins** | **Number** |  | [optional] 
 **team2Wins** | **Number** |  | [optional] 
 **ties** | **Number** |  | [optional] 
-**games** | **[Object]** |  | [optional] 
+**games** | [**[TeamMatchupGames]**](TeamMatchupGames.md) |  | [optional] 
 
 

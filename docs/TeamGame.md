@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
-**teams** | **[Object]** |  | [optional] 
+**teams** | [**[TeamGameTeams]**](TeamGameTeams.md) |  | [optional] 
 
 

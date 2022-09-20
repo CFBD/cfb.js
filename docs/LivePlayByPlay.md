@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **down** | **Number** |  | [optional] 
 **distance** | **Number** |  | [optional] 
 **yardsToGoal** | **Number** |  | [optional] 
-**teams** | **[Object]** |  | [optional] 
-**drives** | **[Object]** |  | [optional] 
+**teams** | [**[LivePlayByPlayTeams]**](LivePlayByPlayTeams.md) |  | [optional] 
+**drives** | [**[LivePlayByPlayDrives]**](LivePlayByPlayDrives.md) |  | [optional] 
 
 

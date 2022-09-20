@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **position** | **String** |  | [optional] 
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
-**usage** | **Object** |  | [optional] 
+**usage** | [**PlayerUsageUsage**](PlayerUsageUsage.md) |  | [optional] 
 
 

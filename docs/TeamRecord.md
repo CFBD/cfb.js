@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **conference** | **String** |  | [optional] 
 **division** | **String** |  | [optional] 
 **expectedWins** | **Number** |  | [optional] 
-**total** | **Object** |  | [optional] 
-**conferenceGames** | **Object** |  | [optional] 
-**homeGames** | **Object** |  | [optional] 
-**awayGames** | **Object** |  | [optional] 
+**total** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
+**conferenceGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
+**homeGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
+**awayGames** | [**TeamRecordTotal**](TeamRecordTotal.md) |  | [optional] 
 
 

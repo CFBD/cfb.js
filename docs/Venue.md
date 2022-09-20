@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **state** | **String** |  | [optional] 
 **zip** | **String** |  | [optional] 
 **countryCode** | **String** |  | [optional] 
-**location** | **Object** |  | [optional] 
+**location** | [**VenueLocation**](VenueLocation.md) |  | [optional] 
 **elevation** | **Number** |  | [optional] 
 **yearConstructed** | **Number** |  | [optional] 
 **dome** | **Boolean** |  | [optional] 

@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **ranking** | **Number** |  | [optional] 
 **secondOrderWins** | **Number** |  | [optional] 
 **sos** | **Number** |  | [optional] 
-**offense** | **Object** |  | [optional] 
-**defense** | **Object** |  | [optional] 
-**specialTeams** | **Object** |  | [optional] 
+**offense** | [**TeamSPRatingOffense**](TeamSPRatingOffense.md) |  | [optional] 
+**defense** | [**TeamSPRatingDefense**](TeamSPRatingDefense.md) |  | [optional] 
+**specialTeams** | [**TeamSPRatingSpecialTeams**](TeamSPRatingSpecialTeams.md) |  | [optional] 
 
 
