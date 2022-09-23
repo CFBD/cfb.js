@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **color** | **String** |  | [optional] 
 **altColor** | **String** |  | [optional] 
 **logos** | **[String]** |  | [optional] 
+**twitter** | **String** |  | [optional] 
 **location** | [**TeamLocation**](TeamLocation.md) |  | [optional] 
 
 
