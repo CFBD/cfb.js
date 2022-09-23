@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 **period** | **Number** |  | [optional] 
 **clock** | **String** |  | [optional] 
+**situation** | **String** |  | [optional] 
+**possession** | **String** |  | [optional] 
 **venue** | [**ScoreboardGameVenue**](ScoreboardGameVenue.md) |  | [optional] 
 **homeTeam** | [**ScoreboardGameHomeTeam**](ScoreboardGameHomeTeam.md) |  | [optional] 
 **awayTeam** | [**ScoreboardGameHomeTeam**](ScoreboardGameHomeTeam.md) |  | [optional] 
