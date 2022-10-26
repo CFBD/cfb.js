@@ -96,7 +96,7 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 
 var apiInstance = new cfb.PlayersApi();
 
-var year = 2020; // Number | Year filter
+var year = 2022; // Number | Year filter
 
 var opts = { 
   'team': "team_example", // String | Team filter
@@ -117,7 +117,7 @@ apiInstance.getPlayerUsage(year, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **year** | **Number**| Year filter | [default to 2020]
+ **year** | **Number**| Year filter | [default to 2022]
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference abbreviation filter | [optional] 
  **position** | **String**| Position abbreviation filter | [optional] 
