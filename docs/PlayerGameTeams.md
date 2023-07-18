@@ -3,8 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**school** | [**PlayerGameSchool**](PlayerGameSchool.md) |  | [optional] 
-**homeAway** | **Boolean** |  | [optional] 
+**school** | **String** |  | [optional] 
+**conference** | **String** |  | [optional] 
+**homeAway** | **String** |  | [optional] 
 **points** | **Number** |  | [optional] 
 **categories** | [**[PlayerGameCategories]**](PlayerGameCategories.md) |  | [optional] 
 
