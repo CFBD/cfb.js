@@ -87,6 +87,7 @@ var apiInstance = new cfb.RatingsApi();
 var opts = { 
   'year': 56, // Number | Season filter
   'week': 56, // Number | Maximum week filter
+  'seasonType': null, // Object | Maximum season type to consider (defaults to regular if week is specified else defaults to postseason)
   'team': "team_example", // String | Team filter
   'conference': "conference_example" // String | Conference filter
 };
@@ -104,6 +105,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **year** | **Number**| Season filter | [optional] 
  **week** | **Number**| Maximum week filter | [optional] 
+ **seasonType** | [**Object**](.md)| Maximum season type to consider (defaults to regular if week is specified else defaults to postseason) | [optional] 
  **team** | **String**| Team filter | [optional] 
  **conference** | **String**| Conference filter | [optional] 
 
