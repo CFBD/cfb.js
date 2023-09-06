@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **year** | **Number** |  | [optional] 
+**teamId** | **Number** |  | [optional] 
 **team** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **division** | **String** |  | [optional] 

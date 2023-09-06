@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**schoolId** | **Number** |  | [optional] 
 **school** | **String** |  | [optional] 
 **conference** | **String** |  | [optional] 
 **homeAway** | **String** |  | [optional] 
