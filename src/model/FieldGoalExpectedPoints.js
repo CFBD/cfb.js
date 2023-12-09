@@ -17,61 +17,68 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BoxScorePlayers', 'model/BoxScoreTeams'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BoxScorePlayers'), require('./BoxScoreTeams'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.cfb) {
       root.cfb = {};
     }
-    root.cfb.BoxScore = factory(root.cfb.ApiClient, root.cfb.BoxScorePlayers, root.cfb.BoxScoreTeams);
+    root.cfb.FieldGoalExpectedPoints = factory(root.cfb.ApiClient);
   }
-}(this, function(ApiClient, BoxScorePlayers, BoxScoreTeams) {
+}(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The BoxScore model module.
-   * @module model/BoxScore
+   * The FieldGoalExpectedPoints model module.
+   * @module model/FieldGoalExpectedPoints
    * @version 4.5.2
    */
 
   /**
-   * Constructs a new <code>BoxScore</code>.
-   * @alias module:model/BoxScore
+   * Constructs a new <code>FieldGoalExpectedPoints</code>.
+   * @alias module:model/FieldGoalExpectedPoints
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>BoxScore</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>FieldGoalExpectedPoints</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/BoxScore} obj Optional instance to populate.
-   * @return {module:model/BoxScore} The populated <code>BoxScore</code> instance.
+   * @param {module:model/FieldGoalExpectedPoints} obj Optional instance to populate.
+   * @return {module:model/FieldGoalExpectedPoints} The populated <code>FieldGoalExpectedPoints</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('teams'))
-        obj.teams = BoxScoreTeams.constructFromObject(data['teams']);
-      if (data.hasOwnProperty('players'))
-        obj.players = BoxScorePlayers.constructFromObject(data['players']);
+      if (data.hasOwnProperty('yardsToGoal'))
+        obj.yardsToGoal = ApiClient.convertToType(data['yardsToGoal'], 'Number');
+      if (data.hasOwnProperty('distance'))
+        obj.distance = ApiClient.convertToType(data['distance'], 'Number');
+      if (data.hasOwnProperty('expectedPoints'))
+        obj.expectedPoints = ApiClient.convertToType(data['expectedPoints'], 'Number');
     }
     return obj;
   }
 
   /**
-   * @member {module:model/BoxScoreTeams} teams
+   * @member {Number} yardsToGoal
    */
-  exports.prototype.teams = undefined;
+  exports.prototype.yardsToGoal = undefined;
 
   /**
-   * @member {module:model/BoxScorePlayers} players
+   * @member {Number} distance
    */
-  exports.prototype.players = undefined;
+  exports.prototype.distance = undefined;
+
+  /**
+   * @member {Number} expectedPoints
+   */
+  exports.prototype.expectedPoints = undefined;
 
 
   return exports;

@@ -4,6 +4,7 @@ All URIs are relative to *https://api.collegefootballdata.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getFGEP**](MetricsApi.md#getFGEP) | **GET** /metrics/fg/ep | Field Goal Expected Points
 [**getGamePPA**](MetricsApi.md#getGamePPA) | **GET** /ppa/games | Team Predicated Points Added (PPA/EPA) by game
 [**getPlayerGamePPA**](MetricsApi.md#getPlayerGamePPA) | **GET** /ppa/players/games | Player Predicated Points Added (PPA/EPA) broken down by game
 [**getPlayerSeasonPPA**](MetricsApi.md#getPlayerSeasonPPA) | **GET** /ppa/players/season | Player Predicated Points Added (PPA/EPA) broken down by season
@@ -12,6 +13,50 @@ Method | HTTP request | Description
 [**getTeamPPA**](MetricsApi.md#getTeamPPA) | **GET** /ppa/teams | Predicted Points Added (PPA/EPA) data by team
 [**getWinProbabilityData**](MetricsApi.md#getWinProbabilityData) | **GET** /metrics/wp | Win probability chart data
 
+
+<a name="getFGEP"></a>
+# **getFGEP**
+> [FieldGoalExpectedPoints] getFGEP()
+
+Field Goal Expected Points
+
+Field Goal Expected Poitns
+
+### Example
+```javascript
+var cfb = require('cfb.js');
+var defaultClient = cfb.ApiClient.instance;
+
+// Configure API key authorization: ApiKeyAuth
+var ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+ApiKeyAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyAuth.apiKeyPrefix = 'Token';
+
+var apiInstance = new cfb.MetricsApi();
+apiInstance.getFGEP().then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[FieldGoalExpectedPoints]**](FieldGoalExpectedPoints.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 <a name="getGamePPA"></a>
 # **getGamePPA**

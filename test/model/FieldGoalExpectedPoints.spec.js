@@ -31,26 +31,32 @@
   var instance;
 
   describe('(package)', function() {
-    describe('PlayerGameTypes', function() {
+    describe('FieldGoalExpectedPoints', function() {
       beforeEach(function() {
-        instance = new cfb.PlayerGameTypes();
+        instance = new cfb.FieldGoalExpectedPoints();
       });
 
-      it('should create an instance of PlayerGameTypes', function() {
-        // TODO: update the code to test PlayerGameTypes
-        expect(instance).to.be.a(cfb.PlayerGameTypes);
+      it('should create an instance of FieldGoalExpectedPoints', function() {
+        // TODO: update the code to test FieldGoalExpectedPoints
+        expect(instance).to.be.a(cfb.FieldGoalExpectedPoints);
       });
 
-      it('should have the property name (base name: "name")', function() {
-        // TODO: update the code to test the property name
-        expect(instance).to.have.property('name');
-        // expect(instance.name).to.be(expectedValueLiteral);
+      it('should have the property yardsToGoal (base name: "yardsToGoal")', function() {
+        // TODO: update the code to test the property yardsToGoal
+        expect(instance).to.have.property('yardsToGoal');
+        // expect(instance.yardsToGoal).to.be(expectedValueLiteral);
       });
 
-      it('should have the property athletes (base name: "athletes")', function() {
-        // TODO: update the code to test the property athletes
-        expect(instance).to.have.property('athletes');
-        // expect(instance.athletes).to.be(expectedValueLiteral);
+      it('should have the property distance (base name: "distance")', function() {
+        // TODO: update the code to test the property distance
+        expect(instance).to.have.property('distance');
+        // expect(instance.distance).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property expectedPoints (base name: "expectedPoints")', function() {
+        // TODO: update the code to test the property expectedPoints
+        expect(instance).to.have.property('expectedPoints');
+        // expect(instance.expectedPoints).to.be(expectedValueLiteral);
       });
 
     });
